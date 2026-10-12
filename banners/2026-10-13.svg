@@ -1,0 +1,23 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#500724"/>
+      <stop offset="55%" stop-color="#db2777"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <g id="paw">
+      <ellipse cx="0" cy="10" rx="10" ry="7.5"/>
+      <ellipse cx="-11" cy="-3" rx="4.5" ry="6"/>
+      <ellipse cx="-3.5" cy="-10" rx="4.5" ry="6"/>
+      <ellipse cx="7" cy="-10" rx="4.5" ry="6"/>
+      <ellipse cx="14.5" cy="-3" rx="4.5" ry="6"/>
+    </g>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="76" letter-spacing="5" fill="#fff1f7">本質アプローチで前進！</text>
+  <g fill="#fff1f7">
+    <use xlink:href="#paw" href="#paw" transform="translate(1030,108) scale(0.7) rotate(25)" opacity="0.45"/>
+    <use xlink:href="#paw" href="#paw" transform="translate(1092,78) scale(0.9) rotate(25)" opacity="0.7"/>
+    <use xlink:href="#paw" href="#paw" transform="translate(1152,44) scale(1.1) rotate(25)" opacity="0.98"/>
+  </g>
+</svg>

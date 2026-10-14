@@ -1,0 +1,21 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="55%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="76" letter-spacing="5" fill="#eef2ff">価値あるサービスとは？</text>
+  <g transform="translate(1090,72)">
+    <circle cx="0" cy="0" r="34" fill="#fde68a"/>
+    <g fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round">
+      <path d="M -28 -16 Q 0 -4 28 -16"/>
+      <path d="M -33 0 Q 0 14 33 0"/>
+      <path d="M -26 18 Q 0 6 26 18"/>
+      <path d="M -18 -28 Q 12 0 -12 31"/>
+    </g>
+    <path d="M 24 28 C 46 42, 62 22, 54 8" fill="none" stroke="#fde68a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

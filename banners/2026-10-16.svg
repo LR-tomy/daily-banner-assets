@@ -1,0 +1,28 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="55%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#fffbeb">未来への道を開く</text>
+  <g transform="translate(1090,78)">
+    <polygon points="-34,-18 -30,-48 -10,-30" fill="#3b0764"/>
+    <polygon points="34,-18 30,-48 10,-30" fill="#3b0764"/>
+    <polygon points="-29,-22 -27,-39 -15,-29" fill="#fbcfe8"/>
+    <polygon points="29,-22 27,-39 15,-29" fill="#fbcfe8"/>
+    <ellipse cx="0" cy="0" rx="40" ry="34" fill="#3b0764"/>
+    <ellipse cx="-14" cy="-5" rx="6" ry="8" fill="#fde68a"/>
+    <ellipse cx="14" cy="-5" rx="6" ry="8" fill="#fde68a"/>
+    <ellipse cx="-14" cy="-5" rx="2.5" ry="6" fill="#1f0a3a"/>
+    <ellipse cx="14" cy="-5" rx="2.5" ry="6" fill="#1f0a3a"/>
+    <polygon points="-4,8 4,8 0,13" fill="#fbcfe8"/>
+    <path d="M 0 13 Q -5 20 -10 17 M 0 13 Q 5 20 10 17" fill="none" stroke="#fbcfe8" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#fef3c7" stroke-width="1.6" stroke-linecap="round" opacity="0.9">
+      <path d="M -46 6 L -22 10 M -46 16 L -22 15"/>
+      <path d="M 46 6 L 22 10 M 46 16 L 22 15"/>
+    </g>
+  </g>
+</svg>

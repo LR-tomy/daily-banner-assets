@@ -1,0 +1,53 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .peek{animation:peek 5s ease-in-out infinite}
+    @keyframes peek{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 4.5s infinite}
+    @keyframes blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+    .look{animation:look 6s ease-in-out infinite}
+    @keyframes look{0%,100%{transform:translateX(-2px)}50%{transform:translateX(2px)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:twitch 7s ease-in-out infinite}
+    @keyframes twitch{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-9deg)}96%{transform:rotate(3deg)}}
+    .bub{animation:rise 5s ease-in infinite;opacity:0}
+    .b2{animation-delay:1.7s}
+    .b3{animation-delay:3.2s}
+    @keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.75}100%{transform:translateY(-100px);opacity:0}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="55%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="5" fill="#fffbeb">速さより「深さ」</text>
+  <g fill="none" stroke="#fffbeb" stroke-width="2">
+    <circle class="bub" cx="1000" cy="140" r="6"/>
+    <circle class="bub b2" cx="1030" cy="140" r="4"/>
+    <circle class="bub b3" cx="1165" cy="140" r="7"/>
+  </g>
+  <g transform="translate(1088,124)">
+    <g class="peek">
+      <g class="ear"><polygon points="-33,-14 -29,-46 -9,-28" fill="#1c1917"/></g>
+      <polygon points="33,-14 29,-46 9,-28" fill="#1c1917"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#fbcfe8"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#1c1917"/>
+      <g class="blink">
+        <ellipse cx="-14" cy="-6" rx="7" ry="9" fill="#fbbf24"/>
+        <ellipse cx="14" cy="-6" rx="7" ry="9" fill="#fbbf24"/>
+      </g>
+      <g class="look">
+        <ellipse cx="-14" cy="-6" rx="2.6" ry="7" fill="#0c0a09"/>
+        <ellipse cx="14" cy="-6" rx="2.6" ry="7" fill="#0c0a09"/>
+      </g>
+      <polygon points="-4,9 4,9 0,14" fill="#fbcfe8"/>
+      <path d="M 0 14 Q -5 21 -10 18 M 0 14 Q 5 21 10 18" fill="none" stroke="#fbcfe8" stroke-width="2" stroke-linecap="round"/>
+      <g stroke="#fde68a" stroke-width="1.6" stroke-linecap="round" opacity=".9">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

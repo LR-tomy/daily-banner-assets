@@ -1,0 +1,59 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .peek{animation:peek 6s ease-in-out infinite}
+    @keyframes peek{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    .glow{animation:glow 3s ease-in-out infinite}
+    @keyframes glow{0%,100%{opacity:.75}50%{opacity:1}}
+    .focus{transform-box:fill-box;transform-origin:50% 50%;animation:focus 6s ease-in-out infinite}
+    @keyframes focus{0%,30%,100%{transform:scaleX(1)}50%,70%{transform:scaleX(.35)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 5s infinite}
+    @keyframes blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:twitch 7s ease-in-out infinite}
+    @keyframes twitch{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-9deg)}96%{transform:rotate(3deg)}}
+    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
+    .t2{animation-delay:1.2s}
+    .t3{animation-delay:2.4s}
+    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.95}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#f8fafc">直感を研ぎ澄ます</text>
+  <g fill="#fde047">
+    <path class="tw" d="M 960 40 L 964 52 L 976 56 L 964 60 L 960 72 L 956 60 L 944 56 L 956 52 Z"/>
+    <path class="tw t2" d="M 1010 100 L 1013 108 L 1021 111 L 1013 114 L 1010 122 L 1007 114 L 999 111 L 1007 108 Z"/>
+    <path class="tw t3" d="M 1165 30 L 1168 38 L 1176 41 L 1168 44 L 1165 52 L 1162 44 L 1154 41 L 1162 38 Z"/>
+  </g>
+  <g transform="translate(1088,124)">
+    <g class="peek">
+      <g class="ear"><polygon points="-33,-14 -29,-46 -9,-28" fill="#0b1120"/></g>
+      <polygon points="33,-14 29,-46 9,-28" fill="#0b1120"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#fbcfe8"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#0b1120"/>
+      <g class="blink">
+        <g class="glow">
+          <ellipse cx="-14" cy="-6" rx="8" ry="9.5" fill="#fde047"/>
+          <ellipse cx="14" cy="-6" rx="8" ry="9.5" fill="#fde047"/>
+        </g>
+      </g>
+      <g class="focus">
+        <ellipse cx="-14" cy="-6" rx="3.4" ry="8" fill="#020617"/>
+      </g>
+      <g class="focus">
+        <ellipse cx="14" cy="-6" rx="3.4" ry="8" fill="#020617"/>
+      </g>
+      <polygon points="-4,9 4,9 0,14" fill="#fbcfe8"/>
+      <path d="M 0 14 Q -5 21 -10 18 M 0 14 Q 5 21 10 18" fill="none" stroke="#fbcfe8" stroke-width="2" stroke-linecap="round"/>
+      <g stroke="#e2e8f0" stroke-width="1.6" stroke-linecap="round" opacity=".9">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

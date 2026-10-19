@@ -1,0 +1,59 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .tilt{transform-box:fill-box;transform-origin:50% 100%;animation:tilt 6s ease-in-out infinite}
+    @keyframes tilt{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(3deg)}}
+    .beat{transform-box:fill-box;transform-origin:50% 60%;animation:beat 1.8s ease-in-out infinite}
+    @keyframes beat{0%,60%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(1)}42%{transform:scale(1.1)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 5s infinite}
+    @keyframes blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+    .rise{animation:rise 5s ease-out infinite;opacity:0}
+    .r2{animation-delay:1.7s}
+    .r3{animation-delay:3.3s}
+    @keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0}20%{opacity:.85}100%{transform:translateY(-70px) scale(1);opacity:0}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9e4b8"/>
+      <stop offset="55%" stop-color="#ecf0cf"/>
+      <stop offset="100%" stop-color="#fefae0"/>
+    </linearGradient>
+    <clipPath id="hc"><ellipse cx="0" cy="0" rx="39" ry="34"/></clipPath>
+    <path id="heart" d="M 0 6 C -12 -4 -10 -14 -4 -14 C -1 -14 0 -11 0 -9 C 0 -11 1 -14 4 -14 C 10 -14 12 -4 0 6 Z"/>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#3d4a2b">本心に寄り添う</text>
+  <g fill="#fb7185">
+    <g transform="translate(960,112)"><use xlink:href="#heart" class="rise"/></g>
+    <g transform="translate(1040,120)"><use xlink:href="#heart" class="rise r2"/></g>
+    <g transform="translate(1168,108)"><use xlink:href="#heart" class="rise r3"/></g>
+  </g>
+  <g transform="translate(1000,112) scale(1.9)">
+    <use xlink:href="#heart" class="beat" fill="#f43f5e"/>
+  </g>
+  <g transform="translate(1100,124)">
+    <g class="tilt">
+      <polygon points="-33,-14 -29,-46 -9,-28" fill="#f59e0b"/>
+      <polygon points="33,-14 29,-46 9,-28" fill="#292524"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#fbcfe8"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#fffaf0"/>
+      <g clip-path="url(#hc)">
+        <circle cx="-26" cy="-16" r="22" fill="#f59e0b"/>
+        <circle cx="30" cy="-14" r="17" fill="#292524"/>
+        <circle cx="4" cy="-30" r="9" fill="#f59e0b"/>
+      </g>
+      <g class="blink">
+        <ellipse cx="-14" cy="-4" rx="6" ry="7.5" fill="#3f2d1b"/>
+        <ellipse cx="14" cy="-4" rx="6" ry="7.5" fill="#3f2d1b"/>
+        <circle cx="-12" cy="-6.5" r="2" fill="#fff"/>
+        <circle cx="16" cy="-6.5" r="2" fill="#fff"/>
+      </g>
+      <polygon points="-4,9 4,9 0,14" fill="#f9a8d4"/>
+      <path d="M 0 14 Q -5 21 -10 18 M 0 14 Q 5 21 10 18" fill="none" stroke="#a8a29e" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#a8a29e" stroke-width="1.5" stroke-linecap="round">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .breathe{transform-box:fill-box;transform-origin:50% 100%;animation:breathe 5s ease-in-out infinite}
+    @keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.02,1.04)}}
+    .halo{transform-box:fill-box;transform-origin:50% 50%;animation:halo 5s ease-in-out infinite}
+    @keyframes halo{0%,100%{transform:scale(.92);opacity:.25}50%{transform:scale(1.08);opacity:.5}}
+    .tail{transform-box:fill-box;transform-origin:0% 100%;animation:sway 6s ease-in-out infinite}
+    @keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(6deg)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 6s infinite}
+    @keyframes blink{0%,90%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:twitch 8s ease-in-out infinite}
+    @keyframes twitch{0%,86%,100%{transform:rotate(0)}91%{transform:rotate(-8deg)}96%{transform:rotate(3deg)}}
+    .petal{animation:fall 7s linear infinite;opacity:0}
+    .p2{animation-delay:2.3s}
+    .p3{animation-delay:4.6s}
+    @keyframes fall{0%{transform:translate(0,-10px) rotate(0);opacity:0}15%{opacity:.8}100%{transform:translate(-30px,110px) rotate(160deg);opacity:0}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="55%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#fecdd3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#292524">やり方より在り方</text>
+  <circle class="halo" cx="1090" cy="85" r="58" fill="#fff"/>
+  <g fill="#fb7185">
+    <ellipse class="petal" cx="1000" cy="10" rx="6" ry="3.5"/>
+    <ellipse class="petal p2" cx="1170" cy="5" rx="6" ry="3.5"/>
+    <ellipse class="petal p3" cx="1040" cy="0" rx="5" ry="3"/>
+  </g>
+  <g transform="translate(1090,92)">
+    <path class="tail" d="M 28 52 C 62 52, 70 14, 50 6" fill="none" stroke="#292524" stroke-width="8" stroke-linecap="round"/>
+    <g class="breathe">
+      <ellipse cx="0" cy="34" rx="34" ry="40" fill="#292524"/>
+    </g>
+    <g class="ear"><polygon points="-26,-22 -24,-52 -6,-34" fill="#292524"/></g>
+    <polygon points="26,-22 24,-52 6,-34" fill="#292524"/>
+    <polygon points="-21,-26 -21,-43 -10,-33" fill="#fda4af"/>
+    <polygon points="21,-26 21,-43 10,-33" fill="#fda4af"/>
+    <circle cx="0" cy="-12" r="28" fill="#292524"/>
+    <g class="blink">
+      <ellipse cx="-10" cy="-14" rx="4.5" ry="6" fill="#fcd34d"/>
+      <ellipse cx="10" cy="-14" rx="4.5" ry="6" fill="#fcd34d"/>
+    </g>
+    <polygon points="-3,-3 3,-3 0,1" fill="#fda4af"/>
+    <g stroke="#fef3c7" stroke-width="1.4" stroke-linecap="round" opacity=".9">
+      <path d="M -33 -2 L -16 0 M -33 6 L -16 4"/>
+      <path d="M 33 -2 L 16 0 M 33 6 L 16 4"/>
+    </g>
+  </g>
+</svg>

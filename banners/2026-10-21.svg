@@ -1,0 +1,56 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .bob{transform-box:fill-box;transform-origin:50% 100%;animation:bob 1.6s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-6px) rotate(3deg)}}
+    .fly{animation:fly 7s ease-in-out infinite}
+    @keyframes fly{0%,100%{transform:translate(0,0)}25%{transform:translate(-40px,-14px)}50%{transform:translate(-80px,8px)}75%{transform:translate(-36px,22px)}}
+    .flap{transform-box:fill-box;transform-origin:100% 50%;animation:flap .35s ease-in-out infinite alternate}
+    .flap2{transform-box:fill-box;transform-origin:0% 50%;animation:flap .35s ease-in-out infinite alternate}
+    @keyframes flap{0%{transform:scaleX(1)}100%{transform:scaleX(.25)}}
+    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
+    .t2{animation-delay:1.2s}
+    .t3{animation-delay:2.4s}
+    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.95}}
+    .tail{transform-box:fill-box;transform-origin:0% 100%;animation:sway 2s ease-in-out infinite}
+    @keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8ece4"/>
+      <stop offset="55%" stop-color="#e3f6d2"/>
+      <stop offset="100%" stop-color="#fff3b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#134e4a">イマココを楽しむ</text>
+  <g fill="#f59e0b">
+    <path class="tw" d="M 975 112 L 978 120 L 986 123 L 978 126 L 975 134 L 972 126 L 964 123 L 972 120 Z"/>
+    <path class="tw t2" d="M 1170 28 L 1173 36 L 1181 39 L 1173 42 L 1170 50 L 1167 42 L 1159 39 L 1167 36 Z"/>
+    <path class="tw t3" d="M 985 30 L 988 38 L 996 41 L 988 44 L 985 52 L 982 44 L 974 41 L 982 38 Z"/>
+  </g>
+  <g transform="translate(1075,70)">
+    <g class="fly">
+      <g class="flap"><ellipse cx="-7" cy="-3" rx="8" ry="6" fill="#fb7185"/></g>
+      <g class="flap2"><ellipse cx="7" cy="-3" rx="8" ry="6" fill="#f472b6"/></g>
+      <ellipse cx="0" cy="0" rx="1.8" ry="6" fill="#4c1d24"/>
+    </g>
+  </g>
+  <g transform="translate(1110,112)">
+    <g class="bob">
+      <polygon points="-33,-14 -29,-46 -9,-28" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="33,-14 29,-46 9,-28" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#fbcfe8"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+      <path d="M -22 -3 Q -14 -13 -6 -3 M 6 -3 Q 14 -13 22 -3" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="-24" cy="8" rx="6" ry="3.5" fill="#fda4af" opacity=".7"/>
+      <ellipse cx="24" cy="8" rx="6" ry="3.5" fill="#fda4af" opacity=".7"/>
+      <polygon points="-4,6 4,6 0,11" fill="#f9a8d4"/>
+      <path d="M 0 11 Q -5 19 -10 15 M 0 11 Q 5 19 10 15" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

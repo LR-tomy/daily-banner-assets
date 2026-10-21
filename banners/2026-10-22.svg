@@ -1,0 +1,77 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .ball{animation:bounce 5s ease-in infinite}
+    @keyframes bounce{0%{transform:translateY(-46px)}14%{transform:translateY(0)}26%{transform:translateY(-26px)}37%{transform:translateY(0)}46%{transform:translateY(-12px)}54%{transform:translateY(0)}60%{transform:translateY(-4px)}65%,100%{transform:translateY(0)}}
+    .spin{transform-box:fill-box;transform-origin:50% 50%;animation:spin 5s ease-out infinite}
+    @keyframes spin{0%{transform:rotate(0)}65%,100%{transform:rotate(-300deg)}}
+    .look{animation:look 5s ease-in-out infinite}
+    @keyframes look{0%{transform:translate(-3px,-4px)}14%{transform:translate(-3px,3px)}26%{transform:translate(-3px,-2px)}37%{transform:translate(-3px,3px)}60%{transform:translate(-2px,2px)}75%,100%{transform:translate(0,0)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 5s infinite}
+    @keyframes blink{0%,80%,86%,100%{transform:scaleY(1)}83%{transform:scaleY(.1)}}
+    .tilt{transform-box:fill-box;transform-origin:50% 100%;animation:tilt 5s ease-in-out infinite}
+    @keyframes tilt{0%,60%{transform:rotate(-4deg)}80%,100%{transform:rotate(1deg)}}
+    .calm{transform-box:fill-box;transform-origin:50% 50%;animation:calm 5s ease-out infinite;opacity:0}
+    .c2{animation-delay:.5s}
+    @keyframes calm{0%,60%{transform:scale(.4);opacity:0}70%{opacity:.7}100%{transform:scale(1.6);opacity:0}}
+    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
+    .t2{animation-delay:1.4s}
+    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.9}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#efe3cf"/>
+      <stop offset="55%" stop-color="#e0e8dc"/>
+      <stop offset="100%" stop-color="#c9e4e6"/>
+    </linearGradient>
+    <clipPath id="hc"><ellipse cx="0" cy="0" rx="39" ry="34"/></clipPath>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#4a3426">感情をてなずける</text>
+  <g fill="none" stroke="#0e7490" stroke-width="2">
+    <circle class="calm" cx="1000" cy="130" r="22"/>
+    <circle class="calm c2" cx="1000" cy="130" r="22"/>
+  </g>
+  <g fill="#e8a33d">
+    <path class="tw" d="M 1170 28 L 1173 36 L 1181 39 L 1173 42 L 1170 50 L 1167 42 L 1159 39 L 1167 36 Z"/>
+    <path class="tw t2" d="M 985 28 L 988 36 L 996 39 L 988 42 L 985 50 L 982 42 L 974 39 L 982 36 Z"/>
+  </g>
+  <g transform="translate(1000,128)">
+    <g class="ball">
+      <g class="spin">
+        <circle cx="0" cy="0" r="17" fill="#a78bfa"/>
+        <path d="M -15 -6 Q 0 -14 15 -6 M -17 2 Q 0 -6 17 2 M -14 9 Q 0 2 14 9 M -5 -16 Q -12 0 -5 16 M 6 -16 Q 13 0 6 16" fill="none" stroke="#6d28d9" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(1110,112)">
+    <g class="tilt">
+      <polygon points="-33,-14 -29,-46 -9,-28" fill="#f59e4b"/>
+      <polygon points="33,-14 29,-46 9,-28" fill="#f59e4b"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#fbcfe8"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#f59e4b"/>
+      <g clip-path="url(#hc)">
+        <g stroke="#c2691e" stroke-width="3.5" stroke-linecap="round">
+          <path d="M 0 -34 L 0 -20 M -9 -34 L -7 -22 M 9 -34 L 7 -22"/>
+          <path d="M -40 -2 L -28 0 M -40 10 L -28 9 M 40 -2 L 28 0 M 40 10 L 28 9"/>
+        </g>
+        <ellipse cx="-11" cy="14" rx="13" ry="10" fill="#fde7c8"/>
+        <ellipse cx="11" cy="14" rx="13" ry="10" fill="#fde7c8"/>
+      </g>
+      <g class="blink">
+        <ellipse cx="-14" cy="-4" rx="7" ry="8" fill="#a3e635"/>
+        <ellipse cx="14" cy="-4" rx="7" ry="8" fill="#a3e635"/>
+        <g class="look">
+          <ellipse cx="-14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+          <ellipse cx="14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+        </g>
+      </g>
+      <polygon points="-4,8 4,8 0,13" fill="#f472b6"/>
+      <path d="M 0 13 Q -5 20 -10 17 M 0 13 Q 5 20 10 17" fill="none" stroke="#7c2d12" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#78350f" stroke-width="1.5" stroke-linecap="round" opacity=".75">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

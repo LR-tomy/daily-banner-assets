@@ -1,0 +1,87 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .head{transform-box:fill-box;transform-origin:50% 100%;animation:head 6s ease-in-out infinite}
+    @keyframes head{0%,100%{transform:rotate(0)}15%{transform:rotate(-5deg)}30%{transform:rotate(4deg)}45%{transform:rotate(-5deg)}62%{transform:rotate(0)}78%,92%{transform:rotate(6deg)}}
+    .look{animation:look 6s ease-in-out infinite}
+    @keyframes look{0%{transform:translate(-3px,0)}15%{transform:translate(-4px,0)}30%{transform:translate(3px,0)}45%{transform:translate(-4px,-1px)}60%{transform:translate(0,-3px)}72%,92%{transform:translate(4px,0)}100%{transform:translate(-3px,0)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 6s infinite}
+    @keyframes blink{0%,50%,54%,100%{transform:scaleY(1)}52%{transform:scaleY(.1)}}
+    .bulb{transform-box:fill-box;transform-origin:50% 100%;animation:bulb 6s ease-out infinite;opacity:0}
+    @keyframes bulb{0%,58%{transform:scale(.3);opacity:0}64%{transform:scale(1.25);opacity:1}70%{transform:scale(1)}90%{opacity:1}98%,100%{transform:scale(1);opacity:0}}
+    .rays{transform-box:fill-box;transform-origin:50% 50%;animation:rays 14s linear infinite}
+    @keyframes rays{to{transform:rotate(360deg)}}
+    .glow{animation:glow 2.4s ease-in-out infinite}
+    @keyframes glow{0%,100%{opacity:.55}50%{opacity:1}}
+    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
+    .t2{animation-delay:1.3s}
+    .t3{animation-delay:2.5s}
+    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.9}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2a26"/>
+      <stop offset="55%" stop-color="#1b4a40"/>
+      <stop offset="100%" stop-color="#2d6a5a"/>
+    </linearGradient>
+    <radialGradient id="lightg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef9c3" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#fef9c3" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="hc"><ellipse cx="0" cy="0" rx="39" ry="34"/></clipPath>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#f0fdf4">工夫して出口を探す</text>
+  <g fill="#fde68a">
+    <path class="tw" d="M 975 30 L 978 38 L 986 41 L 978 44 L 975 52 L 972 44 L 964 41 L 972 38 Z"/>
+    <path class="tw t2" d="M 1180 22 L 1183 30 L 1191 33 L 1183 36 L 1180 44 L 1177 36 L 1169 33 L 1177 30 Z"/>
+    <path class="tw t3" d="M 1105 20 L 1108 28 L 1116 31 L 1108 34 L 1105 42 L 1102 34 L 1094 31 L 1102 28 Z"/>
+  </g>
+  <g transform="translate(1166,104)">
+    <circle class="glow" cx="0" cy="0" r="46" fill="url(#lightg)"/>
+    <g class="rays">
+      <g stroke="#fef08a" stroke-width="2" stroke-linecap="round" opacity=".55">
+        <path d="M 0 -38 L 0 -30 M 0 38 L 0 30 M -38 0 L -30 0 M 38 0 L 30 0 M -27 -27 L -21 -21 M 27 27 L 21 21 M -27 27 L -21 21 M 27 -27 L 21 -21"/>
+      </g>
+    </g>
+    <path d="M -17 46 L -17 -4 A 17 17 0 0 1 17 -4 L 17 46 Z" fill="#fef08a" class="glow"/>
+    <path d="M -17 46 L -17 -4 A 17 17 0 0 1 17 -4 L 17 46" fill="none" stroke="#a16207" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(1040,112)">
+    <g class="head">
+      <polygon points="-33,-14 -29,-46 -9,-28" fill="#9ca3af"/>
+      <polygon points="33,-14 29,-46 9,-28" fill="#9ca3af"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#fbcfe8"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#9ca3af"/>
+      <g clip-path="url(#hc)">
+        <g stroke="#4b5563" stroke-width="3.5" stroke-linecap="round">
+          <path d="M 0 -34 L 0 -20 M -9 -34 L -7 -22 M 9 -34 L 7 -22"/>
+          <path d="M -40 -2 L -28 0 M -40 10 L -28 9 M 40 -2 L 28 0 M 40 10 L 28 9"/>
+        </g>
+        <ellipse cx="-11" cy="14" rx="13" ry="10" fill="#f3f4f6"/>
+        <ellipse cx="11" cy="14" rx="13" ry="10" fill="#f3f4f6"/>
+      </g>
+      <g class="blink">
+        <ellipse cx="-14" cy="-4" rx="7" ry="8" fill="#fbbf24"/>
+        <ellipse cx="14" cy="-4" rx="7" ry="8" fill="#fbbf24"/>
+        <g class="look">
+          <ellipse cx="-14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+          <ellipse cx="14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+        </g>
+      </g>
+      <polygon points="-4,8 4,8 0,13" fill="#f472b6"/>
+      <path d="M 0 13 Q -5 20 -10 17 M 0 13 Q 5 20 10 17" fill="none" stroke="#374151" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" opacity=".85">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(1040,50)">
+    <g class="bulb">
+      <circle cx="0" cy="-10" r="9" fill="#fde047" stroke="#ca8a04" stroke-width="1.5"/>
+      <rect x="-4" y="-2" width="8" height="5" rx="1.5" fill="#a8a29e"/>
+      <path d="M -3 -12 Q 0 -16 3 -12" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

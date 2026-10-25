@@ -1,0 +1,74 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .surf{transform-box:fill-box;transform-origin:50% 100%;animation:surf 4s ease-in-out infinite}
+    @keyframes surf{0%,100%{transform:translateY(2px) rotate(-3deg)}50%{transform:translateY(-8px) rotate(4deg)}}
+    .earb{transform-box:fill-box;transform-origin:50% 100%;animation:earb 4s ease-in-out infinite}
+    @keyframes earb{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(-16deg)}}
+    .earf{transform-box:fill-box;transform-origin:50% 100%;animation:earb 4s ease-in-out infinite;animation-delay:.2s}
+    .look{animation:look 4s ease-in-out infinite}
+    @keyframes look{0%,100%{transform:translate(2px,0)}50%{transform:translate(4px,-1px)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 5s infinite}
+    @keyframes blink{0%,88%,94%,100%{transform:scaleY(1)}91%{transform:scaleY(.1)}}
+    .flow{animation:flow 3.2s linear infinite;opacity:0}
+    .f2{animation-delay:.9s}
+    .f3{animation-delay:1.8s}
+    .f4{animation-delay:2.4s}
+    @keyframes flow{0%{transform:translateX(-120px);opacity:0}20%{opacity:.8}80%{opacity:.8}100%{transform:translateX(120px);opacity:0}}
+    .wv{animation:wv 3s linear infinite}
+    @keyframes wv{to{transform:translateX(-80px)}}
+    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
+    .t2{animation-delay:1.6s}
+    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.9}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0e0"/>
+      <stop offset="55%" stop-color="#ffe0d2"/>
+      <stop offset="100%" stop-color="#bfe6f2"/>
+    </linearGradient>
+    <clipPath id="hc"><ellipse cx="0" cy="0" rx="39" ry="34"/></clipPath>
+    <clipPath id="rc"><rect x="940" y="0" width="260" height="150"/></clipPath>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#7c2d12">直感で流れに乗る</text>
+  <g clip-path="url(#rc)">
+    <g fill="none" stroke="#0ea5e9" stroke-width="3" stroke-linecap="round">
+      <path class="flow" d="M 1000 40 Q 1030 28 1060 40 T 1120 40"/>
+      <path class="flow f2" d="M 1010 66 Q 1040 54 1070 66 T 1130 66"/>
+      <path class="flow f3" d="M 1000 92 Q 1030 80 1060 92 T 1120 92"/>
+      <path class="flow f4" d="M 1060 24 Q 1090 12 1120 24 T 1180 24"/>
+    </g>
+    <g class="wv">
+      <path d="M 900 144 Q 920 132 940 144 T 980 144 T 1020 144 T 1060 144 T 1100 144 T 1140 144 T 1180 144 T 1220 144 T 1260 144 T 1300 144 V 150 H 900 Z" fill="#38bdf8" opacity=".85"/>
+    </g>
+  </g>
+  <g fill="#f59e0b">
+    <path class="tw" d="M 975 28 L 978 36 L 986 39 L 978 42 L 975 50 L 972 42 L 964 39 L 972 36 Z"/>
+    <path class="tw t2" d="M 1172 100 L 1175 108 L 1183 111 L 1175 114 L 1172 122 L 1169 114 L 1161 111 L 1169 108 Z"/>
+  </g>
+  <g transform="translate(1090,108)">
+    <g class="surf">
+      <g class="earb"><polygon points="-33,-14 -37,-46 -12,-28" fill="#8b9bb0"/></g>
+      <g class="earf"><polygon points="33,-14 37,-46 12,-28" fill="#8b9bb0"/></g>
+      <polygon points="-29,-19 -32,-37 -17,-27" fill="#fbcfe8"/>
+      <polygon points="29,-19 32,-37 17,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#8b9bb0"/>
+      <ellipse cx="-11" cy="14" rx="13" ry="10" fill="#a9b6c7"/>
+      <ellipse cx="11" cy="14" rx="13" ry="10" fill="#a9b6c7"/>
+      <g class="blink">
+        <ellipse cx="-14" cy="-4" rx="7" ry="8" fill="#a3e635"/>
+        <ellipse cx="14" cy="-4" rx="7" ry="8" fill="#a3e635"/>
+        <g class="look">
+          <ellipse cx="-14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+          <ellipse cx="14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+        </g>
+      </g>
+      <polygon points="-4,8 4,8 0,13" fill="#475569"/>
+      <path d="M 0 13 Q -5 20 -10 17 M 0 13 Q 5 20 10 17" fill="none" stroke="#334155" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#e2e8f0" stroke-width="1.5" stroke-linecap="round">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .nod{transform-box:fill-box;transform-origin:50% 100%;animation:nod 4s ease-in-out infinite}
+    @keyframes nod{0%,100%{transform:rotate(0)}20%{transform:rotate(-4deg)}40%{transform:rotate(3deg)}60%,80%{transform:rotate(0)}}
+    .look{animation:look 4s ease-in-out infinite}
+    @keyframes look{0%,100%{transform:translate(-3px,2px)}50%{transform:translate(-4px,3px)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 4s infinite}
+    @keyframes blink{0%,70%,76%,100%{transform:scaleY(1)}73%{transform:scaleY(.1)}}
+    .beat{transform-box:fill-box;transform-origin:50% 60%;animation:beat 1.4s ease-in-out infinite}
+    @keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.25)}30%{transform:scale(1)}45%{transform:scale(1.15)}60%{transform:scale(1)}}
+    .ring{transform-box:fill-box;transform-origin:50% 50%;animation:ring 1.4s ease-out infinite;opacity:0}
+    .r2{animation-delay:.7s}
+    @keyframes ring{0%{transform:scale(.6);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
+    .t2{animation-delay:1.5s}
+    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.9}}
+    .tail{transform-box:fill-box;transform-origin:0% 100%;animation:sway 2.4s ease-in-out infinite}
+    @keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f4f5"/>
+      <stop offset="55%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#fde4ef"/>
+    </linearGradient>
+    <clipPath id="hc"><ellipse cx="0" cy="0" rx="39" ry="34"/></clipPath>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#27272a">自分に嘘をつかない</text>
+  <g fill="#f59e0b">
+    <path class="tw" d="M 985 24 L 988 32 L 996 35 L 988 38 L 985 46 L 982 38 L 974 35 L 982 32 Z"/>
+    <path class="tw t2" d="M 1175 24 L 1178 32 L 1186 35 L 1178 38 L 1175 46 L 1172 38 L 1164 35 L 1172 32 Z"/>
+  </g>
+  <g transform="translate(1010,102)">
+    <circle class="ring" cx="0" cy="0" r="14" fill="none" stroke="#f43f5e" stroke-width="2"/>
+    <circle class="ring r2" cx="0" cy="0" r="14" fill="none" stroke="#f43f5e" stroke-width="2"/>
+    <path class="beat" d="M 0 14 C -26 -4 -14 -22 0 -8 C 14 -22 26 -4 0 14 Z" fill="#f43f5e"/>
+  </g>
+  <g transform="translate(1110,112)">
+    <g class="nod">
+      <polygon points="-33,-14 -29,-46 -9,-28" fill="#a16f43"/>
+      <polygon points="33,-14 29,-46 9,-28" fill="#a16f43"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#fbcfe8"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#fbcfe8"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#a16f43"/>
+      <g clip-path="url(#hc)">
+        <g stroke="#4a2c17" stroke-width="3.5" stroke-linecap="round">
+          <path d="M 0 -34 L 0 -20 M -9 -34 L -7 -22 M 9 -34 L 7 -22"/>
+          <path d="M -40 -2 L -28 0 M -40 10 L -28 9 M 40 -2 L 28 0 M 40 10 L 28 9"/>
+        </g>
+        <ellipse cx="-11" cy="14" rx="13" ry="10" fill="#e8d3b9"/>
+        <ellipse cx="11" cy="14" rx="13" ry="10" fill="#e8d3b9"/>
+      </g>
+      <g class="blink">
+        <ellipse cx="-14" cy="-4" rx="7" ry="8" fill="#fcd34d"/>
+        <ellipse cx="14" cy="-4" rx="7" ry="8" fill="#fcd34d"/>
+        <g class="look">
+          <ellipse cx="-14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+          <ellipse cx="14" cy="-4" rx="3.4" ry="6.2" fill="#1c1917"/>
+        </g>
+      </g>
+      <polygon points="-4,8 4,8 0,13" fill="#f472b6"/>
+      <path d="M 0 13 Q -5 20 -10 17 M 0 13 Q 5 20 10 17" fill="none" stroke="#4a2c17" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#f1f5f9" stroke-width="1.5" stroke-linecap="round">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

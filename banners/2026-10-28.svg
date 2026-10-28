@@ -1,0 +1,65 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .hop{transform-box:fill-box;transform-origin:50% 100%;animation:hop 2.4s ease-in-out infinite}
+    @keyframes hop{0%,100%{transform:translateY(0) scale(1.04,.96)}20%{transform:translateY(0) scale(1.04,.96)}45%{transform:translateY(-12px) scale(.97,1.03)}70%{transform:translateY(0) scale(1.04,.96)}85%{transform:translateY(0) scale(1)}}
+    .earw{transform-box:fill-box;transform-origin:50% 100%;animation:earw 2.4s ease-in-out infinite}
+    @keyframes earw{0%,100%{transform:rotate(0)}45%{transform:rotate(-10deg)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 4s infinite}
+    @keyframes blink{0%,80%,86%,100%{transform:scaleY(1)}83%{transform:scaleY(.1)}}
+    .spin{transform-box:fill-box;transform-origin:50% 50%;animation:spin 3s cubic-bezier(.6,0,.3,1) infinite}
+    @keyframes spin{0%{transform:rotate(0)}70%,100%{transform:rotate(360deg)}}
+    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
+    .t2{animation-delay:1.2s}
+    .t3{animation-delay:2.4s}
+    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.95}}
+    .dash{stroke-dasharray:6 8;animation:dash 1s linear infinite}
+    @keyframes dash{to{stroke-dashoffset:-14}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="55%" stop-color="#f0fdfa"/>
+      <stop offset="100%" stop-color="#fef9c3"/>
+    </linearGradient>
+    <clipPath id="hc"><ellipse cx="0" cy="0" rx="39" ry="34"/></clipPath>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#312e81">リスタートを楽しむ！</text>
+  <path class="dash" d="M 960 140 L 1190 140" stroke="#818cf8" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <g transform="translate(1010,62)">
+    <g class="spin">
+      <path d="M -18 -4 A 18 18 0 1 1 -6 15" fill="none" stroke="#f97316" stroke-width="6" stroke-linecap="round"/>
+      <polygon points="-27,-2 -9,-2 -18,-17" fill="#f97316"/>
+    </g>
+  </g>
+  <g fill="#f59e0b">
+    <path class="tw" d="M 975 24 L 978 32 L 986 35 L 978 38 L 975 46 L 972 38 L 964 35 L 972 32 Z"/>
+    <path class="tw t2" d="M 1175 22 L 1178 30 L 1186 33 L 1178 36 L 1175 44 L 1172 36 L 1164 33 L 1172 30 Z"/>
+    <path class="tw t3" d="M 1060 18 L 1062 24 L 1068 26 L 1062 28 L 1060 34 L 1058 28 L 1052 26 L 1058 24 Z"/>
+  </g>
+  <g transform="translate(1110,108)">
+    <g class="hop">
+      <g class="earw"><polygon points="-33,-14 -29,-46 -9,-28" fill="#1f2937"/></g>
+      <polygon points="33,-14 29,-46 9,-28" fill="#1f2937"/>
+      <polygon points="-28,-19 -27,-38 -15,-27" fill="#f9a8d4"/>
+      <polygon points="28,-19 27,-38 15,-27" fill="#f9a8d4"/>
+      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#1f2937"/>
+      <ellipse cx="-24" cy="9" rx="6" ry="3.5" fill="#f472b6" opacity=".55"/>
+      <ellipse cx="24" cy="9" rx="6" ry="3.5" fill="#f472b6" opacity=".55"/>
+      <g class="blink">
+        <ellipse cx="-14" cy="-4" rx="7.5" ry="8.5" fill="#fbbf24"/>
+        <ellipse cx="14" cy="-4" rx="7.5" ry="8.5" fill="#fbbf24"/>
+        <ellipse cx="-14" cy="-4" rx="3.4" ry="6.6" fill="#0c0a09"/>
+        <ellipse cx="14" cy="-4" rx="3.4" ry="6.6" fill="#0c0a09"/>
+        <circle cx="-12" cy="-7" r="1.8" fill="#fff"/>
+        <circle cx="16" cy="-7" r="1.8" fill="#fff"/>
+      </g>
+      <polygon points="-4,8 4,8 0,13" fill="#f472b6"/>
+      <path d="M 0 13 Q -6 21 -11 17 M 0 13 Q 6 21 11 17" fill="none" stroke="#e5e7eb" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" opacity=".9">
+        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
+        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+      </g>
+    </g>
+  </g>
+</svg>

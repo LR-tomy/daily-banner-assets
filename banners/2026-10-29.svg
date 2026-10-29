@@ -1,70 +1,75 @@
-<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .dash{transform-box:fill-box;transform-origin:50% 100%;animation:dash 1.6s ease-in-out infinite}
-    @keyframes dash{0%,100%{transform:translateY(0) rotate(7deg)}25%{transform:translateY(-8px) rotate(10deg)}50%{transform:translateY(0) rotate(7deg)}75%{transform:translateY(-8px) rotate(10deg)}}
-    .earw{transform-box:fill-box;transform-origin:50% 100%;animation:earw 1.6s ease-in-out infinite}
-    @keyframes earw{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(-20deg)}}
+    .walk{animation:walk 11s linear infinite}
+    @keyframes walk{0%{transform:translateX(-110px)}100%{transform:translateX(1290px)}}
+    .bob{animation:bob .7s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}25%,75%{transform:translateY(-2px)}50%{transform:translateY(0)}}
+    .leg{transform-box:fill-box;transform-origin:50% 0%;animation:step .7s ease-in-out infinite}
+    .h{animation-delay:-.35s}
+    @keyframes step{0%,100%{transform:rotate(-28deg)}50%{transform:rotate(28deg)}}
+    .tail{transform-box:fill-box;transform-origin:100% 100%;animation:tail 1.4s ease-in-out infinite}
+    @keyframes tail{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(7deg)}}
     .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 4s infinite}
     @keyframes blink{0%,80%,86%,100%{transform:scaleY(1)}83%{transform:scaleY(.1)}}
-    .chev{animation:chev 1.2s linear infinite;opacity:0}
-    .c2{animation-delay:.3s}
-    .c3{animation-delay:.6s}
-    @keyframes chev{0%{transform:translateX(-24px);opacity:0}30%{opacity:.9}100%{transform:translateX(24px);opacity:0}}
-    .line{animation:line .9s linear infinite;opacity:0}
-    .l2{animation-delay:.3s}
-    .l3{animation-delay:.6s}
-    @keyframes line{0%{transform:translateX(60px);opacity:0}30%{opacity:.7}100%{transform:translateX(-30px);opacity:0}}
-    .tw{transform-box:fill-box;transform-origin:50% 50%;animation:tw 3.6s ease-in-out infinite;opacity:0}
-    .t2{animation-delay:1.7s}
-    @keyframes tw{0%,100%{transform:scale(.2) rotate(0);opacity:0}50%{transform:scale(1) rotate(45deg);opacity:.9}}
+    .ground{stroke-dasharray:22 16;animation:ground .7s linear infinite}
+    @keyframes ground{0%{stroke-dashoffset:0}100%{stroke-dashoffset:38}}
+    .cloud{animation:cloud 30s linear infinite}
+    @keyframes cloud{0%{transform:translateX(0)}100%{transform:translateX(-260px)}}
   </style>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffedd5"/>
-      <stop offset="55%" stop-color="#fff7ed"/>
-      <stop offset="100%" stop-color="#dbeafe"/>
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="55%" stop-color="#fdf2f8"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
     </linearGradient>
-    <clipPath id="hc"><ellipse cx="0" cy="0" rx="39" ry="34"/></clipPath>
   </defs>
   <rect width="1200" height="150" fill="url(#bg)"/>
-  <text x="540" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="6" fill="#1e3a8a">とにかく前進！</text>
-  <g fill="none" stroke="#fb923c" stroke-width="3" stroke-linecap="round">
-    <path class="line" d="M 1160 50 L 1190 50"/>
-    <path class="line l2" d="M 1170 90 L 1198 90"/>
-    <path class="line l3" d="M 1150 125 L 1180 125"/>
+  <g fill="#ffffff" opacity=".7">
+    <g class="cloud">
+      <ellipse cx="300" cy="30" rx="60" ry="12"/><ellipse cx="330" cy="22" rx="34" ry="12"/>
+      <ellipse cx="900" cy="124" rx="50" ry="9"/><ellipse cx="925" cy="118" rx="28" ry="9"/>
+      <ellipse cx="1300" cy="34" rx="56" ry="11"/><ellipse cx="1328" cy="26" rx="30" ry="11"/>
+    </g>
   </g>
-  <g fill="none" stroke="#f97316" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path class="chev" d="M 962 52 L 982 75 L 962 98"/>
-    <path class="chev c2" d="M 986 52 L 1006 75 L 986 98"/>
-    <path class="chev c3" d="M 1010 52 L 1030 75 L 1010 98"/>
-  </g>
-  <g fill="#3b82f6">
-    <path class="tw" d="M 1170 22 L 1173 30 L 1181 33 L 1173 36 L 1170 44 L 1167 36 L 1159 33 L 1167 30 Z"/>
-    <path class="tw t2" d="M 1060 18 L 1063 26 L 1071 29 L 1063 32 L 1060 40 L 1057 32 L 1049 29 L 1057 26 Z"/>
-  </g>
-  <g transform="translate(1100,112)">
-    <g class="dash">
-      <g class="earw"><polygon points="-33,-14 -29,-46 -9,-28" fill="#5b4636"/></g>
-      <polygon points="33,-14 29,-46 9,-28" fill="#5b4636"/>
-      <polygon points="-28,-19 -27,-38 -15,-27" fill="#d6a68e"/>
-      <polygon points="28,-19 27,-38 15,-27" fill="#d6a68e"/>
-      <ellipse cx="0" cy="0" rx="39" ry="34" fill="#f3e5d0"/>
-      <g clip-path="url(#hc)">
-        <ellipse cx="0" cy="8" rx="23" ry="22" fill="#5b4636"/>
-      </g>
-      <ellipse cx="0" cy="12" rx="13" ry="9" fill="#e8d3b9"/>
-      <g class="blink">
-        <ellipse cx="-14" cy="-3" rx="7" ry="8" fill="#38bdf8"/>
-        <ellipse cx="14" cy="-3" rx="7" ry="8" fill="#38bdf8"/>
-        <ellipse cx="-13" cy="-3" rx="3.4" ry="6.2" fill="#0c0a09"/>
-        <ellipse cx="15" cy="-3" rx="3.4" ry="6.2" fill="#0c0a09"/>
-      </g>
-      <polygon points="-4,8 4,8 0,13" fill="#7a5a49"/>
-      <path d="M 0 13 Q -5 20 -10 17 M 0 13 Q 5 20 10 17" fill="none" stroke="#3f2d22" stroke-width="1.8" stroke-linecap="round"/>
-      <g stroke="#78716c" stroke-width="1.5" stroke-linecap="round">
-        <path d="M -46 8 L -22 11 M -46 18 L -22 16"/>
-        <path d="M 46 8 L 22 11 M 46 18 L 22 16"/>
+  <line class="ground" x1="0" y1="146" x2="1200" y2="146" stroke="#c4b5fd" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(0,144)">
+    <g class="walk">
+      <g class="bob">
+        <!-- far legs -->
+        <g fill="#8a6a4f">
+          <g transform="translate(-14,-20)"><g class="leg"><rect x="-3" y="0" width="6" height="13" rx="3"/><rect x="-3.5" y="12" width="7" height="8" rx="3.5" fill="#f5f5f4"/></g></g>
+          <g transform="translate(15,-20)"><g class="leg h"><rect x="-3" y="0" width="6" height="13" rx="3"/><rect x="-3.5" y="12" width="7" height="8" rx="3.5" fill="#f5f5f4"/></g></g>
+        </g>
+        <!-- tail -->
+        <path class="tail" d="M -27 -28 Q -52 -26 -50 -46 Q -49 -58 -41 -56" fill="none" stroke="#b08968" stroke-width="7" stroke-linecap="round"/>
+        <!-- body -->
+        <ellipse cx="0" cy="-27" rx="31" ry="14" fill="#b08968"/>
+        <g fill="none" stroke="#6b4a33" stroke-width="3" stroke-linecap="round">
+          <path d="M -18 -39 q 3 6 0 11"/><path d="M -6 -40 q 3 6 0 12"/><path d="M 6 -40 q 3 6 0 12"/><path d="M 17 -38 q 2 5 0 9"/>
+        </g>
+        <ellipse cx="14" cy="-18" rx="14" ry="6" fill="#fafaf9"/>
+        <!-- near legs -->
+        <g fill="#b08968">
+          <g transform="translate(-18,-20)"><g class="leg h"><rect x="-3" y="0" width="6" height="13" rx="3"/><rect x="-3.5" y="12" width="7" height="8" rx="3.5" fill="#fafaf9"/></g></g>
+          <g transform="translate(22,-20)"><g class="leg"><rect x="-3" y="0" width="6" height="13" rx="3"/><rect x="-3.5" y="12" width="7" height="8" rx="3.5" fill="#fafaf9"/></g></g>
+        </g>
+        <!-- head -->
+        <polygon points="37,-50 45,-62 48,-45" fill="#8a6a4f"/>
+        <polygon points="23,-46 27,-62 38,-51" fill="#b08968"/>
+        <polygon points="27,-49 28,-58 34,-51" fill="#e8b4a0"/>
+        <circle cx="35" cy="-37" r="13" fill="#b08968"/>
+        <g fill="none" stroke="#6b4a33" stroke-width="2.4" stroke-linecap="round">
+          <path d="M 30 -48 v 5"/><path d="M 36 -49 v 5"/>
+        </g>
+        <ellipse cx="44" cy="-32" rx="6.5" ry="5.5" fill="#fafaf9"/>
+        <circle cx="48" cy="-35" r="1.8" fill="#f472b6"/>
+        <g class="blink"><ellipse cx="39" cy="-40" rx="1.9" ry="2.8" fill="#1c1917"/></g>
+        <path d="M 46 -30 q -2 3 -5 2" fill="none" stroke="#6b4a33" stroke-width="1.2" stroke-linecap="round"/>
+        <g stroke="#fafaf9" stroke-width="1.2" stroke-linecap="round" opacity=".95">
+          <path d="M 41 -31 L 26 -25"/><path d="M 41 -33 L 24 -32"/><path d="M 41 -35 L 26 -39"/>
+        </g>
       </g>
     </g>
   </g>
+  <text x="600" y="55" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="72" letter-spacing="6" fill="#134e4a">とにかく前進！</text>
 </svg>

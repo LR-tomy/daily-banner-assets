@@ -1,0 +1,70 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .wave{animation:wave 3.2s linear infinite}
+    @keyframes wave{0%{transform:translateX(0)}100%{transform:translateX(-40px)}}
+    .steam{animation:steam 5s ease-in-out infinite;opacity:0}
+    .s2{animation-delay:1.6s}
+    .s3{animation-delay:3.2s}
+    @keyframes steam{0%{transform:translateY(0);opacity:0}25%{opacity:.75}100%{transform:translateY(-34px);opacity:0}}
+    .ripple{transform-box:fill-box;transform-origin:50% 50%;animation:ripple 4s ease-out infinite;opacity:0}
+    .rp2{animation-delay:2s}
+    @keyframes ripple{0%{transform:scale(.4);opacity:.8}100%{transform:scale(1.6);opacity:0}}
+    .bob{animation:bob 4.5s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:ear 7s ease-in-out infinite}
+    @keyframes ear{0%,90%,100%{transform:rotate(0)}94%{transform:rotate(-10deg)}97%{transform:rotate(2deg)}}
+    .eye{transform-box:fill-box;transform-origin:50% 50%;animation:eye 4.5s ease-in-out infinite}
+    @keyframes eye{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.6)}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fefce8"/>
+      <stop offset="60%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde8d0"/>
+    </linearGradient>
+    <linearGradient id="wt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+      <clipPath id="pool"><rect x="716" y="70" width="520" height="90" rx="26"/></clipPath>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="400" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="88" letter-spacing="8" fill="#115e59">心を緩める</text>
+  <!-- cat in hot spring -->
+  <g transform="translate(1010,66)">
+    <g class="bob">
+      <polygon points="6,-24 20,-40 27,-14" fill="#d97f2e"/>
+      <g class="ear"><polygon points="-21,-16 -15,-41 3,-24" fill="#f2a65a"/></g>
+      <polygon points="-17,-20 -14,-34 -5,-24" fill="#fbcfe8"/>
+      <circle cx="0" cy="0" r="27" fill="#f2a65a"/>
+      <ellipse cx="-18" cy="9" rx="12" ry="10" fill="#fff7ed"/>
+      <path d="M -27 -14 Q -14 -26 -4 -12 L -10 -2 Z" fill="#fff7ed" opacity="0"/>
+      <circle cx="-28" cy="4" r="2.6" fill="#f472b6"/>
+      <circle cx="-4" cy="9" r="5.5" fill="#fb7185" opacity=".45"/>
+      <g class="eye"><path d="M -17 -6 q 5 5 10 0" fill="none" stroke="#7c2d12" stroke-width="2.6" stroke-linecap="round"/></g>
+      <path d="M -26 8 q 3 4 7 2" fill="none" stroke="#7c2d12" stroke-width="1.5" stroke-linecap="round"/>
+      <g stroke="#fff7ed" stroke-width="1.4" stroke-linecap="round" opacity=".95">
+        <path d="M -14 9 L 8 14"/><path d="M -14 7 L 10 7"/><path d="M -14 5 L 8 0"/>
+      </g>
+      <g transform="translate(-2,-30) rotate(-5)">
+        <rect x="-19" y="-9" width="38" height="15" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+        <path d="M -12 -3 H 12" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+  <!-- water -->
+  <g opacity=".85" clip-path="url(#pool)"><path class="wave" d="M 700 92 q 10 -4 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 L 1300 160 L 700 160 Z" fill="url(#wt)"/></g>
+  <ellipse class="ripple" cx="1010" cy="95" rx="48" ry="6" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <ellipse class="ripple rp2" cx="1010" cy="95" rx="48" ry="6" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <!-- rocks -->
+  <ellipse cx="770" cy="132" rx="38" ry="26" fill="#a8a29e"/>
+  <ellipse cx="808" cy="146" rx="34" ry="16" fill="#78716c"/>
+  <ellipse cx="1190" cy="140" rx="40" ry="24" fill="#a8a29e"/>
+  <!-- steam -->
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".9">
+    <g transform="translate(880,90)"><g class="steam"><path d="M 0 0 q 9 -9 0 -18 t 0 -18"/></g></g>
+    <g transform="translate(950,88)"><g class="steam s2"><path d="M 0 0 q 9 -9 0 -18 t 0 -18"/></g></g>
+    <g transform="translate(1090,88)"><g class="steam s3"><path d="M 0 0 q 9 -9 0 -18 t 0 -18"/></g></g>
+    <g transform="translate(1150,90)"><g class="steam s2"><path d="M 0 0 q 9 -9 0 -18 t 0 -18"/></g></g>
+  </g>
+</svg>

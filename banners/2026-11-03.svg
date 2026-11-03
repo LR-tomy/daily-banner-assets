@@ -1,0 +1,80 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cat{animation:cat 7s linear infinite;opacity:0}
+    @keyframes cat{
+      0%{transform:translate(750px,112px) rotate(0deg);opacity:0}
+      4%,25%{transform:translate(750px,112px) rotate(0deg);opacity:1}
+      28%{transform:translate(790px,86px) rotate(-22deg)}
+      34%{transform:translate(860px,66px) rotate(-10deg)}
+      38%{transform:translate(915px,62px) rotate(0deg)}
+      42%{transform:translate(975px,68px) rotate(12deg)}
+      46%{transform:translate(1030px,86px) rotate(22deg)}
+      50%{transform:translate(1075px,102px) rotate(6deg)}
+      52%,90%{transform:translate(1075px,102px) rotate(0deg);opacity:1}
+      96%,100%{transform:translate(1075px,102px) rotate(0deg);opacity:0}
+    }
+    .sq{transform-box:fill-box;transform-origin:50% 100%;animation:sq 7s ease-in-out infinite}
+    @keyframes sq{0%,16%{transform:scale(1,1)}22%{transform:scale(1.06,.8)}25%{transform:scale(.94,1.08)}28%,49%{transform:scale(1,1)}51%{transform:scale(1.1,.78)}55%{transform:scale(.97,1.04)}59%,100%{transform:scale(1,1)}}
+    .leg{transform-box:fill-box;transform-origin:50% 0%}
+    .lh{animation:lh 7s ease-in-out infinite}
+    .lf{animation:lf 7s ease-in-out infinite}
+    @keyframes lh{0%,25%{transform:rotate(0)}29%,47%{transform:rotate(58deg)}51%,100%{transform:rotate(0)}}
+    @keyframes lf{0%,25%{transform:rotate(0)}29%,47%{transform:rotate(-58deg)}51%,100%{transform:rotate(0)}}
+    .tail{transform-box:fill-box;transform-origin:100% 100%;animation:tail 1.4s ease-in-out infinite}
+    @keyframes tail{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(9deg)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:blink 3.5s infinite}
+    @keyframes blink{0%,86%,92%,100%{transform:scaleY(1)}89%{transform:scaleY(.1)}}
+    .heart{transform-box:fill-box;transform-origin:50% 100%;animation:heart 7s ease-out infinite;opacity:0;transform:scale(0)}
+    @keyframes heart{0%,55%{transform:translateY(0) scale(0);opacity:0}59%{transform:translateY(0) scale(1.35);opacity:1}63%{transform:translateY(0) scale(1);opacity:1}88%{transform:translateY(-8px) scale(1);opacity:1}95%,100%{transform:translateY(-12px) scale(1);opacity:0}}
+    .glow{animation:glow 7s ease-in-out infinite}
+    @keyframes glow{0%,100%{opacity:.18}50%{opacity:.3}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134e4a"/>
+      <stop offset="100%" stop-color="#0f2a3f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <circle class="glow" cx="1010" cy="42" r="30" fill="#fef9c3"/>
+  <text x="360" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="76" letter-spacing="5" fill="#fef3c7">自分を信頼する</text>
+  <!-- jump trail -->
+  <path d="M 760 96 Q 915 -22 1068 90" fill="none" stroke="#fef9c3" stroke-opacity=".28" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 9"/>
+  <!-- rocks -->
+  <rect x="692" y="116" width="116" height="40" rx="8" fill="#475569"/>
+  <ellipse cx="750" cy="116" rx="58" ry="6" fill="#86efac"/>
+  <rect x="1020" y="108" width="110" height="46" rx="8" fill="#475569"/>
+  <ellipse cx="1075" cy="108" rx="55" ry="6" fill="#86efac"/>
+  <!-- heart -->
+  <g transform="translate(1075,50)"><g class="heart"><path d="M 0 4 C -9 -8 -24 2 0 24 C 24 2 9 -8 0 4 Z" fill="#fb7185"/></g></g>
+  <!-- cat -->
+  <g class="cat">
+    <g transform="scale(.75)"><g class="sq">
+      <g fill="#e0b878">
+        <g transform="translate(-14,-20)"><g class="leg lh"><rect x="-3" y="0" width="6" height="20" rx="3"/></g></g>
+        <g transform="translate(15,-20)"><g class="leg lf"><rect x="-3" y="0" width="6" height="20" rx="3"/></g></g>
+      </g>
+      <path class="tail" d="M -27 -28 Q -54 -26 -52 -48 Q -51 -60 -43 -58" fill="none" stroke="#f6d9a6" stroke-width="8" stroke-linecap="round"/>
+      <ellipse cx="0" cy="-27" rx="31" ry="14" fill="#f6d9a6"/>
+      <g fill="none" stroke="#d9a15a" stroke-width="3" stroke-linecap="round">
+        <path d="M -18 -39 q 3 6 0 11"/><path d="M -6 -40 q 3 6 0 12"/><path d="M 6 -40 q 3 6 0 12"/><path d="M 17 -38 q 2 5 0 9"/>
+      </g>
+      <g fill="#f6d9a6">
+        <g transform="translate(-18,-20)"><g class="leg lh"><rect x="-3" y="0" width="6" height="20" rx="3"/></g></g>
+        <g transform="translate(22,-20)"><g class="leg lf"><rect x="-3" y="0" width="6" height="20" rx="3"/></g></g>
+      </g>
+      <polygon points="37,-50 45,-62 48,-45" fill="#e0b878"/>
+      <polygon points="23,-46 27,-62 38,-51" fill="#f6d9a6"/>
+      <polygon points="27,-49 28,-58 34,-51" fill="#f9a8d4"/>
+      <circle cx="35" cy="-37" r="13" fill="#f6d9a6"/>
+      <g fill="none" stroke="#d9a15a" stroke-width="2.2" stroke-linecap="round"><path d="M 30 -48 v 5"/><path d="M 36 -49 v 5"/></g>
+      <ellipse cx="44" cy="-32" rx="6.5" ry="5.5" fill="#fff7ed"/>
+      <circle cx="48" cy="-35" r="1.9" fill="#f472b6"/>
+      <g class="blink"><ellipse cx="39" cy="-40" rx="2.3" ry="3" fill="#65a30d"/><ellipse cx="39.4" cy="-40" rx="1" ry="2.4" fill="#0c0a09"/></g>
+      <path d="M 46 -31 q -2 3 -5 2" fill="none" stroke="#9a6b2f" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity=".9">
+        <path d="M 41 -32 L 26 -26"/><path d="M 41 -34 L 24 -33"/><path d="M 41 -36 L 26 -40"/>
+      </g>
+    </g></g>
+  </g>
+</svg>

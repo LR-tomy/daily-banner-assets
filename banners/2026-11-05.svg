@@ -1,0 +1,81 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .w1{animation:w1 4s linear infinite}
+    .w2{animation:w1 2.6s linear infinite}
+    @keyframes w1{0%{transform:translateX(0)}100%{transform:translateX(-40px)}}
+    .boat{animation:boat 4s ease-in-out infinite;transform-box:fill-box}
+    @keyframes boat{0%,100%{transform:translate(960px,100px) scale(1.2) rotate(-1.2deg)}50%{transform:translate(960px,102px) scale(1.2) rotate(1.2deg)}}
+    .oar{transform-box:view-box;transform-origin:0px 0px;animation:oar 4s ease-in-out infinite}
+    @keyframes oar{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(16deg)}}
+    .arm{animation:arm 4s ease-in-out infinite;transform-box:fill-box;transform-origin:0% 0%}
+    @keyframes arm{0%,100%{transform:rotate(8deg)}50%{transform:rotate(-10deg)}}
+    .lean{animation:lean 4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+    @keyframes lean{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+    .tail{animation:tail 3s ease-in-out infinite;transform-box:fill-box;transform-origin:100% 100%}
+    @keyframes tail{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(6deg)}}
+    .blink{animation:blink 4.2s infinite;transform-box:fill-box;transform-origin:50% 50%}
+    @keyframes blink{0%,88%,94%,100%{transform:scaleY(1)}91%{transform:scaleY(.1)}}
+    .ear{animation:ear 6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+    @keyframes ear{0%,90%,100%{transform:rotate(0)}94%{transform:rotate(-9deg)}97%{transform:rotate(2deg)}}
+    .pad{animation:pad 16s linear infinite}
+    .p2{animation-duration:23s;animation-delay:-9s}
+    .p3{animation-duration:19s;animation-delay:-14s}
+    @keyframes pad{0%{transform:translateX(0)}100%{transform:translateX(-1400px)}}
+    .rip{animation:rip 4s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%;opacity:0}
+    .rp2{animation-delay:2s}
+    @keyframes rip{0%{transform:scale(.3);opacity:.8}60%{opacity:.35}100%{transform:scale(1.7);opacity:0}}
+    .mist{animation:mist 40s linear infinite}
+    @keyframes mist{0%{transform:translateX(0)}100%{transform:translateX(-300px)}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f8ee"/><stop offset="55%" stop-color="#e6f1e4"/><stop offset="100%" stop-color="#d6e9e6"/>
+    </linearGradient>
+    <linearGradient id="wt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8fc9c4"/><stop offset="100%" stop-color="#5aa9a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <g fill="#ffffff" opacity=".65"><g class="mist"><ellipse cx="260" cy="26" rx="70" ry="9"/><ellipse cx="560" cy="38" rx="52" ry="7"/><ellipse cx="900" cy="22" rx="64" ry="8"/><ellipse cx="1300" cy="30" rx="70" ry="9"/></g></g>
+  <text x="400" y="52" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="76" letter-spacing="8" fill="#1f3b3a">粛々とやる</text>
+  <g opacity=".9"><path class="w1" d="M -40 100 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 q 10 -3 20 0 t 20 0 L 1300 160 L -40 160 Z" fill="#b6ddd8"/></g>
+  <!-- lily pads -->
+  <g fill="#7fb98a">
+    <g class="pad"><ellipse cx="1500" cy="124" rx="22" ry="5"/></g>
+    <g class="pad p2"><ellipse cx="1350" cy="136" rx="16" ry="4"/></g>
+    <g class="pad p3"><ellipse cx="1260" cy="118" rx="12" ry="3.5"/></g>
+  </g>
+  <!-- boat + cat -->
+  <g class="boat">
+    <path class="tail" d="M -38 -10 Q -62 -12 -60 -34 Q -59 -46 -51 -44" fill="none" stroke="#27272a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M -76 0 Q -66 24 -34 26 L 44 26 Q 74 24 84 -6 Q 4 6 -76 0 Z" fill="#c49a64" stroke="#8a6a3d" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M -64 8 Q 4 14 74 6" fill="none" stroke="#8a6a3d" stroke-width="2" opacity=".6"/>
+    <g class="lean">
+      <ellipse cx="-12" cy="-16" rx="26" ry="19" fill="#27272a"/>
+      <polygon points="-2,-52 5,-66 12,-48" fill="#18181b"/>
+      <g class="ear"><polygon points="-18,-50 -14,-66 -4,-52" fill="#27272a"/></g>
+      <polygon points="-15,-54 -13,-62 -8,-54" fill="#a1a1aa" opacity=".7"/>
+      <circle cx="4" cy="-38" r="17" fill="#27272a"/>
+      <ellipse cx="15" cy="-33" rx="7.5" ry="6" fill="#3f3f46"/>
+      <circle cx="21" cy="-35" r="2" fill="#f472b6"/>
+      <g class="blink"><ellipse cx="9" cy="-42" rx="2.4" ry="3.4" fill="#fbbf24"/><ellipse cx="9.6" cy="-42" rx="1" ry="2.8" fill="#09090b"/></g>
+      <g stroke="#e4e4e7" stroke-width="1.3" stroke-linecap="round" opacity=".95">
+        <path d="M 13 -31 L -6 -25"/><path d="M 13 -33 L -8 -33"/><path d="M 13 -35 L -6 -41"/>
+      </g>
+      <!-- scarf -->
+      <path d="M -10 -26 Q 6 -20 20 -26 L 20 -21 Q 6 -14 -10 -20 Z" fill="#e57373"/>
+    </g>
+    <!-- oar at oarlock -->
+    <g transform="translate(26,-2)">
+      <g class="oar">
+        <line x1="-34" y1="-20" x2="40" y2="26" stroke="#8a6a3d" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="42" cy="28" rx="10" ry="4.5" fill="#a67c47" transform="rotate(32 42 28)"/>
+        <circle cx="-34" cy="-20" r="5" fill="#27272a"/>
+      </g>
+      <circle cx="0" cy="0" r="3" fill="#6b4a33"/>
+    </g>
+  </g>
+  <ellipse class="rip" cx="1000" cy="132" rx="26" ry="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <ellipse class="rip rp2" cx="1000" cy="132" rx="26" ry="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <g opacity=".9"><path class="w2" d="M -40 124 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 q 10 -2 20 0 t 20 0 L 1300 160 L -40 160 Z" fill="url(#wt)" opacity=".75"/></g>
+</svg>

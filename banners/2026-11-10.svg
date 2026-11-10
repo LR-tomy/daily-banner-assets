@@ -1,0 +1,59 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes ck0{0%,16%{stroke-dashoffset:26;opacity:1}22%,90%{stroke-dashoffset:0;opacity:1}97%,100%{stroke-dashoffset:0;opacity:0}}
+    .ck0{animation:ck0 10s ease-out infinite;stroke-dasharray:26;stroke-dashoffset:26}
+    @keyframes ck1{0%,38%{stroke-dashoffset:26;opacity:1}44%,90%{stroke-dashoffset:0;opacity:1}97%,100%{stroke-dashoffset:0;opacity:0}}
+    .ck1{animation:ck1 10s ease-out infinite;stroke-dasharray:26;stroke-dashoffset:26}
+    @keyframes ck2{0%,60%{stroke-dashoffset:26;opacity:1}66%,90%{stroke-dashoffset:0;opacity:1}97%,100%{stroke-dashoffset:0;opacity:0}}
+    .ck2{animation:ck2 10s ease-out infinite;stroke-dasharray:26;stroke-dashoffset:26}
+    
+    .paw{transform-box:view-box;transform-origin:0px 0px;animation:paw 10s ease-in-out infinite}
+    @keyframes paw{0%,6%{transform:rotate(0)}11%{transform:rotate(0deg)}15%{transform:rotate(118deg)}18%{transform:rotate(103deg)}21%{transform:rotate(108deg)}33%{transform:rotate(108deg)}37%{transform:rotate(108deg)}40%{transform:rotate(93deg)}43%{transform:rotate(98deg)}55%{transform:rotate(98deg)}59%{transform:rotate(98deg)}62%{transform:rotate(83deg)}65%{transform:rotate(88deg)}86%{transform:rotate(88deg)}94%,100%{transform:rotate(0)}}
+    .tail{transform-box:fill-box;transform-origin:0% 100%;animation:tl 3.6s ease-in-out infinite}
+    @keyframes tl{0%,100%{transform:rotate(0)}40%{transform:rotate(7deg)}60%{transform:rotate(-3deg)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:er 6s ease-in-out infinite}
+    @keyframes er{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-14deg)}96%{transform:rotate(2deg)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:bl 5s infinite}
+    @keyframes bl{0%,90%,96%,100%{transform:scaleY(1)}93%{transform:scaleY(.1)}}
+    .head{transform-box:fill-box;transform-origin:70% 100%;animation:hd 10s ease-in-out infinite}
+    @keyframes hd{0%,10%{transform:rotate(0)}20%,40%{transform:rotate(-4deg)}45%,70%{transform:rotate(-1deg)}90%,100%{transform:rotate(0)}}
+    .card{animation:cd 5s ease-in-out infinite;transform-box:fill-box}
+    @keyframes cd{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf5e9"/><stop offset="100%" stop-color="#efe6d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <line x1="0" y1="20" x2="1200" y2="20" stroke="#e7dcc4" stroke-width="1.5"/><line x1="0" y1="42" x2="1200" y2="42" stroke="#e7dcc4" stroke-width="1.5"/><line x1="0" y1="64" x2="1200" y2="64" stroke="#e7dcc4" stroke-width="1.5"/><line x1="0" y1="86" x2="1200" y2="86" stroke="#e7dcc4" stroke-width="1.5"/><line x1="0" y1="108" x2="1200" y2="108" stroke="#e7dcc4" stroke-width="1.5"/><line x1="0" y1="130" x2="1200" y2="130" stroke="#e7dcc4" stroke-width="1.5"/>
+  <line x1="46" y1="0" x2="46" y2="150" stroke="#f0b6b0" stroke-width="2"/>
+  <text x="400" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="68" letter-spacing="3" fill="#44403c">マイルールをチェック</text>
+  <!-- checklist card -->
+  <g class="card"><g transform="translate(990,18) rotate(-2)">
+    <rect x="0" y="0" width="112" height="112" rx="7" fill="#fffdf7" stroke="#d6c7a8" stroke-width="2.5"/>
+    <rect x="38" y="-6" width="36" height="12" rx="4" fill="#78716c"/>
+    <rect x="12" y="26" width="16" height="16" rx="3" fill="#fff" stroke="#a8a29e" stroke-width="2"/><line x1="38" y1="34" x2="98" y2="34" stroke="#d6d3d1" stroke-width="3" stroke-linecap="round"/><path class="ck0" d="M 14 34 L 19.5 39.5 L 30 26" fill="none" stroke="#16a34a" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="12" y="54" width="16" height="16" rx="3" fill="#fff" stroke="#a8a29e" stroke-width="2"/><line x1="38" y1="62" x2="98" y2="62" stroke="#d6d3d1" stroke-width="3" stroke-linecap="round"/><path class="ck1" d="M 14 62 L 19.5 67.5 L 30 54" fill="none" stroke="#16a34a" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="12" y="82" width="16" height="16" rx="3" fill="#fff" stroke="#a8a29e" stroke-width="2"/><line x1="38" y1="90" x2="98" y2="90" stroke="#d6d3d1" stroke-width="3" stroke-linecap="round"/><path class="ck2" d="M 14 90 L 19.5 95.5 L 30 82" fill="none" stroke="#16a34a" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></g>
+  <!-- tabby cat sitting, facing left, tapping the list -->
+  <g transform="translate(1146,146)">
+    <path class="tail" d="M 22 -6 Q 46 -6 44 -30 Q 43 -42 36 -40" fill="none" stroke="#7a5c3e" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="6" cy="-24" rx="19" ry="25" fill="#8b6b4a" transform="rotate(-8 6 -24)"/>
+    <g fill="none" stroke="#4a3524" stroke-width="2.4" stroke-linecap="round"><path d="M 12 -40 q 4 5 0 10"/><path d="M 17 -32 q 4 5 0 10"/><path d="M 18 -20 q 3 4 0 8"/></g>
+    <ellipse cx="-3" cy="-22" rx="7" ry="14" fill="#f3e9d6"/>
+    <g transform="translate(-10,-36)"><g class="paw"><rect x="-4" y="0" width="8" height="26" rx="4" fill="#8b6b4a"/><rect x="-4.5" y="19" width="9" height="8" rx="4" fill="#f3e9d6"/></g></g>
+    <rect x="-12" y="-14" width="8" height="14" rx="4" fill="#8b6b4a"/>
+    <g class="head">
+      <polygon points="-24,-62 -22,-78 -12,-65" fill="#6b4f35"/>
+      <g class="ear"><polygon points="-8,-65 -1,-77 4,-60" fill="#8b6b4a"/></g>
+      <circle cx="-11" cy="-52" r="15" fill="#8b6b4a"/>
+      <g fill="none" stroke="#4a3524" stroke-width="2" stroke-linecap="round"><path d="M -15 -65 v 5"/><path d="M -9 -66 v 5"/><path d="M -3 -64 v 4"/></g>
+      <ellipse cx="-22" cy="-47" rx="6.5" ry="5.5" fill="#f3e9d6"/>
+      <circle cx="-27" cy="-50" r="1.8" fill="#f472b6"/>
+      <g class="blink"><ellipse cx="-18" cy="-54" rx="2.1" ry="3" fill="#d9f99d"/><ellipse cx="-18.5" cy="-54" rx="1" ry="2.5" fill="#0c0a09"/></g>
+      <g stroke="#f3e9d6" stroke-width="1.2" stroke-linecap="round">
+        <path d="M -21 -47 L -5 -42"/><path d="M -21 -49 L -3 -49"/><path d="M -21 -51 L -5 -56"/>
+      </g>
+    </g>
+  </g>
+</svg>

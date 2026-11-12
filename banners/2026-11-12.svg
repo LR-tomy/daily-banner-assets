@@ -1,0 +1,60 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tors{transform-box:view-box;transform-origin:0px 0px;animation:tors 7s ease-in-out infinite}
+    @keyframes tors{0%,8%{transform:rotate(0)}30%,58%{transform:rotate(14deg)}80%,100%{transform:rotate(0)}}
+    .fl{transform-box:fill-box;transform-origin:50% 0%;animation:fl 7s ease-in-out infinite}
+    @keyframes fl{0%,8%{transform:rotate(0)}30%,58%{transform:rotate(-64deg)}80%,100%{transform:rotate(0)}}
+    .hd{transform-box:view-box;transform-origin:0px 0px;animation:hd 7s ease-in-out infinite}
+    @keyframes hd{0%,8%{transform:rotate(0)}30%,58%{transform:rotate(14deg)}80%,100%{transform:rotate(0)}}
+    .eye{transform-box:fill-box;transform-origin:50% 50%;animation:eye 7s ease-in-out infinite}
+    @keyframes eye{0%,10%,76%,100%{transform:scaleY(1)}26%,60%{transform:scaleY(.12)}}
+    .yawn{transform-box:fill-box;transform-origin:50% 50%;animation:yw 7s ease-in-out infinite;opacity:0}
+    @keyframes yw{0%,28%{transform:scaleY(0);opacity:0}38%,52%{transform:scaleY(1);opacity:1}62%,100%{transform:scaleY(0);opacity:0}}
+    .tail{transform-box:fill-box;transform-origin:100% 100%;animation:tl 3s ease-in-out infinite}
+    @keyframes tl{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(8deg)}}
+    .ring{transform-box:fill-box;transform-origin:50% 50%;animation:rg 7s ease-out infinite;opacity:0}
+    .r2{animation-delay:1.1s}.r3{animation-delay:2.2s}
+    @keyframes rg{0%{transform:scale(.4);opacity:.7}100%{transform:scale(2.6);opacity:0}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:er 6s ease-in-out infinite}
+    @keyframes er{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-10deg)}96%{transform:rotate(2deg)}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde8ea"/><stop offset="55%" stop-color="#f6e3f0"/><stop offset="100%" stop-color="#e9ddf4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <g fill="none" stroke="#d8b4e2" stroke-width="3">
+    <circle class="ring" cx="1000" cy="84" r="40"/><circle class="ring r2" cx="1000" cy="84" r="40"/><circle class="ring r3" cx="1000" cy="84" r="40"/>
+  </g>
+  <text x="400" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="5" fill="#6b2d5c">自分をゆるめる</text>
+  <rect y="141" width="1200" height="9" fill="#e7cfe3" opacity=".7"/>
+  <!-- hachiware cat stretching (faces right) -->
+  <g transform="translate(1010,142) scale(1.3)">
+    <g fill="#fffaf5" stroke="#e5d4e4" stroke-width="1"><rect x="-23" y="-24" width="7" height="22" rx="3.5"/><rect x="-14" y="-24" width="7" height="22" rx="3.5"/></g>
+    <ellipse cx="-19" cy="-2" rx="6" ry="2.6" fill="#fffaf5"/><ellipse cx="-10" cy="-2" rx="6" ry="2.6" fill="#fffaf5"/>
+    <g transform="translate(-20,-24)">
+      <g class="tors"><g transform="translate(20,24)">
+        <path class="tail" d="M -27 -28 Q -56 -30 -54 -54 Q -53 -68 -44 -66" fill="none" stroke="#6b7280" stroke-width="8" stroke-linecap="round"/>
+        <g fill="#fffaf5" stroke="#e5d4e4" stroke-width="1">
+          <g transform="translate(15,-20)"><g class="fl"><rect x="-3.5" y="0" width="7" height="20" rx="3.5"/></g></g>
+          <g transform="translate(24,-20)"><g class="fl"><rect x="-3.5" y="0" width="7" height="20" rx="3.5"/></g></g>
+        </g>
+        <ellipse cx="0" cy="-27" rx="31" ry="14" fill="#fffaf5"/>
+        <path d="M -28 -36 Q -10 -44 8 -38 Q 0 -30 -12 -29 Q -26 -29 -28 -36 Z" fill="#6b7280"/>
+        <g transform="translate(24,-34)"><g class="hd"><g transform="translate(-24,34)">
+          <polygon points="37,-50 45,-62 48,-45" fill="#6b7280"/>
+          <g class="ear"><polygon points="23,-46 27,-62 38,-51" fill="#6b7280"/></g>
+          <polygon points="27,-49 28,-58 34,-51" fill="#fbcfe8"/>
+          <circle cx="35" cy="-37" r="13" fill="#fffaf5" stroke="#e5d4e4" stroke-width="1"/>
+          <path d="M 22 -40 Q 28 -52 35 -50 Q 34 -44 35 -40 Q 28 -42 22 -40 Z" fill="#6b7280"/>
+          <path d="M 35 -50 Q 42 -52 48 -42 Q 42 -42 36 -42 Z" fill="#6b7280"/>
+          <circle cx="48" cy="-35" r="1.9" fill="#f472b6"/>
+          <ellipse class="yawn" cx="45" cy="-30" rx="3.2" ry="4.6" fill="#be185d"/>
+          <g class="eye"><ellipse cx="39" cy="-40" rx="1.9" ry="2.8" fill="#0369a1"/></g>
+          <g stroke="#9ca3af" stroke-width="1.2" stroke-linecap="round"><path d="M 41 -32 L 26 -26"/><path d="M 41 -34 L 24 -33"/><path d="M 41 -36 L 26 -40"/></g>
+        </g></g></g>
+      </g></g>
+    </g>
+  </g>
+</svg>

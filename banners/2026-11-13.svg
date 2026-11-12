@@ -1,0 +1,69 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .arm{transform-box:fill-box;transform-origin:100% 50%;animation:arm 3.2s linear infinite}
+    @keyframes arm{0%{transform:scaleX(1)}80%,92%{transform:scaleX(1.4)}100%{transform:scaleX(1)}}
+    .paw{animation:paw 3.2s linear infinite}
+    @keyframes paw{0%{transform:translate(0,0)}80%,92%{transform:translate(-20.2px,5px)}100%{transform:translate(0,0)}}
+    .jit{animation:jit .22s ease-in-out infinite}
+    @keyframes jit{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+    .ln{stroke-dasharray:34;stroke-dashoffset:34;animation:ln 3.2s linear infinite}
+    @keyframes ln{0%{stroke-dashoffset:34;opacity:1}80%,92%{stroke-dashoffset:0;opacity:1}98%,100%{stroke-dashoffset:0;opacity:0}}
+    .cone{animation:cone 4s ease-in-out infinite}
+    @keyframes cone{0%,100%{opacity:.5}50%{opacity:.8}}
+    .tail{transform-box:fill-box;transform-origin:0% 100%;animation:tl 4s ease-in-out infinite}
+    @keyframes tl{0%,100%{transform:rotate(0)}50%{transform:rotate(5deg)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:er 6s ease-in-out infinite}
+    @keyframes er{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-12deg)}96%{transform:rotate(2deg)}}
+    .eye{transform-box:fill-box;transform-origin:50% 50%;animation:ey 5s infinite}
+    @keyframes ey{0%,90%,96%,100%{transform:scaleY(1)}93%{transform:scaleY(.1)}}
+    .dust{animation:du 9s linear infinite}
+    @keyframes du{0%{transform:translate(0,0);opacity:0}15%{opacity:.7}100%{transform:translate(-30px,-110px);opacity:0}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/><stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <linearGradient id="cn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity=".95"/><stop offset="100%" stop-color="#fde68a" stop-opacity=".15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <g fill="#fde68a"><circle class="dust" cx="200" cy="150" r="3"/><circle class="dust" style="animation-delay:-3s" cx="520" cy="150" r="4"/><circle class="dust" style="animation-delay:-6s" cx="860" cy="150" r="3"/></g>
+  <text x="380" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="80" letter-spacing="5" fill="#1e293b">手元に集中！</text>
+  <!-- lamp light -->
+  <polygon class="cone" points="988,44 940,112 1086,112" fill="url(#cn)"/>
+  <!-- tabby cat facing left, writing -->
+  <g transform="translate(1138,116)">
+    <path class="tail" d="M 22 -4 Q 50 -4 48 -30 Q 47 -44 39 -42" fill="none" stroke="#7d8896" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="6" cy="-24" rx="21" ry="26" fill="#9aa5b1" transform="rotate(-8 6 -24)"/>
+    <g fill="none" stroke="#4b5563" stroke-width="2.4" stroke-linecap="round"><path d="M 14 -40 q 4 5 0 10"/><path d="M 19 -32 q 4 5 0 10"/><path d="M 20 -20 q 3 4 0 8"/></g>
+    <ellipse cx="-3" cy="-22" rx="8" ry="15" fill="#f1f5f9"/>
+    <g transform="translate(-10,-34) rotate(-10)">
+      <polygon points="-14,-34 -12,-50 -2,-37" fill="#7d8896"/>
+      <g class="ear"><polygon points="2,-37 8,-49 14,-31" fill="#9aa5b1"/></g>
+      <circle cx="0" cy="-24" r="15" fill="#9aa5b1"/>
+      <g fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round"><path d="M -5 -37 v 5"/><path d="M 1 -38 v 5"/></g>
+      <ellipse cx="-11" cy="-19" rx="6.5" ry="5.5" fill="#f1f5f9"/>
+      <circle cx="-16" cy="-22" r="1.8" fill="#f472b6"/>
+      <g class="eye"><path d="M -10 -27 q 3 3 6 0" fill="none" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/></g>
+      <g stroke="#f8fafc" stroke-width="1.2" stroke-linecap="round"><path d="M -10 -19 L 6 -14"/><path d="M -10 -21 L 8 -21"/><path d="M -10 -23 L 6 -28"/></g>
+    </g>
+  </g>
+  <!-- paper + writing -->
+  <rect x="990" y="98" width="92" height="15" rx="2" fill="#fffdf7" stroke="#d6c7a8" stroke-width="1.5"/>
+  <g stroke="#e7dcc4" stroke-width="1"><line x1="996" y1="102" x2="1076" y2="102"/><line x1="996" y1="107" x2="1076" y2="107"/></g>
+  <path class="ln" d="M 1072 106 q -4 -5 -8 0 t -8 0 t -8 0 t -8 0 t -8 0" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+  <!-- arm + pencil -->
+  <g transform="translate(1127,88) rotate(-14)"><rect class="arm" x="-52" y="-4.5" width="52" height="9" rx="4.5" fill="#9aa5b1"/></g>
+  <g class="paw"><g class="jit">
+    <circle cx="1077.5" cy="99" r="5.2" fill="#f1f5f9"/>
+    <line x1="1080" y1="92" x2="1071" y2="106" stroke="#f59e0b" stroke-width="3.2" stroke-linecap="round"/>
+    <polygon points="1070,104 1072.2,104.8 1071,107.2" fill="#44403c"/>
+  </g></g>
+  <!-- lamp -->
+  <g stroke="#475569" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 938 112 L 950 112 M 944 112 L 944 74 L 982 42"/></g>
+  <path d="M 972 40 L 996 38 L 1004 52 L 980 54 Z" fill="#fbbf24" stroke="#d97706" stroke-width="2" stroke-linejoin="round"/>
+  <!-- desk -->
+  <rect x="900" y="112" width="300" height="38" fill="#a47c52"/>
+  <rect x="900" y="112" width="300" height="5" fill="#c49a64"/>
+</svg>

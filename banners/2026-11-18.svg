@@ -1,0 +1,77 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .arm{transform-box:view-box;transform-origin:0px 0px;animation:arm 8s ease-in-out infinite}
+    @keyframes arm{0%,14%{transform:rotate(0)}26%,44%{transform:rotate(88deg)}58%,100%{transform:rotate(0)}}
+    .kit{animation:kit 8s ease-in-out infinite}
+    @keyframes kit{
+      0%{transform:translate(1000px,146px);opacity:0}
+      4%,14%{transform:translate(1000px,146px);opacity:1}
+      22%{transform:translate(1022px,112px)}
+      34%{transform:translate(1050px,76px)}
+      46%{transform:translate(1060px,92px)}
+      52%,88%{transform:translate(1062px,96px);opacity:1}
+      95%,100%{transform:translate(1062px,96px);opacity:0}
+    }
+    .kb{animation:kb 1.6s ease-in-out infinite}
+    @keyframes kb{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+    .kt{transform-box:fill-box;transform-origin:100% 100%;animation:kt 1.4s ease-in-out infinite}
+    @keyframes kt{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(10deg)}}
+    .tail{transform-box:fill-box;transform-origin:0% 100%;animation:tl 3.6s ease-in-out infinite}
+    @keyframes tl{0%,100%{transform:rotate(0)}40%{transform:rotate(7deg)}60%{transform:rotate(-3deg)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:er 7s ease-in-out infinite}
+    @keyframes er{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-12deg)}96%{transform:rotate(2deg)}}
+    .blink{transform-box:fill-box;transform-origin:50% 50%;animation:bl 5s infinite}
+    @keyframes bl{0%,90%,96%,100%{transform:scaleY(1)}93%{transform:scaleY(.1)}}
+    .head{transform-box:fill-box;transform-origin:70% 100%;animation:hd 8s ease-in-out infinite}
+    @keyframes hd{0%,12%{transform:rotate(0)}26%,50%{transform:rotate(-8deg)}64%,100%{transform:rotate(0)}}
+    .spark{transform-box:fill-box;transform-origin:50% 50%;animation:sp 8s ease-out infinite;opacity:0}
+    @keyframes sp{0%,50%{transform:scale(0);opacity:0}58%{transform:scale(1.3);opacity:1}72%,100%{transform:scale(.5);opacity:0}}
+    .heart{animation:ht 8s ease-out infinite;opacity:0}
+    @keyframes ht{0%,56%{transform:translate(0,0);opacity:0}62%{opacity:1}92%,100%{transform:translate(-8px,-30px);opacity:0}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f0fdfa"/><stop offset="100%" stop-color="#ccfbf1"/></linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <text x="340" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="56" letter-spacing="1" fill="#7c2d12">メンターの助けを借りる</text>
+  <rect y="146" width="1200" height="4" fill="#a7d8cf"/>
+  <!-- mentor cat on the ledge, facing left -->
+  <g transform="translate(1104,96) scale(.9)">
+    <path class="tail" d="M 24 -6 Q 52 -6 50 -32 Q 49 -46 41 -44" fill="none" stroke="#475569" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="6" cy="-26" rx="21" ry="27" fill="#475569" transform="rotate(-8 6 -26)"/>
+    <ellipse cx="-3" cy="-24" rx="8" ry="15" fill="#f1f5f9"/>
+    <g class="head">
+      <polygon points="-26,-70 -24,-88 -13,-74" fill="#334155"/>
+      <g class="ear"><polygon points="-9,-74 -2,-86 4,-68" fill="#475569"/></g>
+      <circle cx="-12" cy="-60" r="16" fill="#475569"/>
+      <ellipse cx="-24" cy="-55" rx="7" ry="6" fill="#f1f5f9"/>
+      <circle cx="-30" cy="-58" r="2" fill="#f472b6"/>
+      <g class="blink"><ellipse cx="-19" cy="-62" rx="2.2" ry="3.2" fill="#fde047"/><ellipse cx="-19.6" cy="-62" rx="1" ry="2.6" fill="#0c0a09"/></g>
+      <circle cx="-19" cy="-62" r="6.6" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+      <path d="M -12.4 -62 L -2 -64" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round"/>
+      <g stroke="#f1f5f9" stroke-width="1.3" stroke-linecap="round" opacity=".95"><path d="M -23 -55 L -6 -50"/><path d="M -23 -57 L -4 -57"/><path d="M -23 -59 L -6 -64"/></g>
+    </g>
+    <g transform="translate(-12,-30)"><g class="arm"><rect x="-4.5" y="0" width="9" height="42" rx="4.5" fill="#475569"/><ellipse cx="0" cy="42" rx="6" ry="4.5" fill="#f1f5f9"/></g></g>
+  </g>
+  <!-- kitten, facing right -->
+  <g class="kit"><g transform="scale(.55)"><g class="kb">
+    <g fill="#fdf3e1"><g transform="translate(-14,-20)"><rect x="-3" y="0" width="6" height="20" rx="3"/></g><g transform="translate(15,-20)"><rect x="-3" y="0" width="6" height="20" rx="3"/></g></g>
+    <path class="kt" d="M -27 -28 Q -54 -26 -52 -48 Q -51 -60 -43 -58" fill="none" stroke="#fdf3e1" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="0" cy="-27" rx="31" ry="14" fill="#fdf3e1"/>
+    <path d="M -20 -38 Q -4 -42 8 -37 Q 2 -30 -10 -29 Q -22 -30 -20 -38 Z" fill="#f59e0b"/>
+    <g fill="#fdf3e1"><g transform="translate(-18,-20)"><rect x="-3" y="0" width="6" height="20" rx="3"/></g><g transform="translate(22,-20)"><rect x="-3" y="0" width="6" height="20" rx="3"/></g></g>
+    <polygon points="37,-50 45,-62 48,-45" fill="#f59e0b"/>
+    <polygon points="23,-46 27,-62 38,-51" fill="#fdf3e1"/>
+    <polygon points="27,-49 28,-58 34,-51" fill="#fbcfe8"/>
+    <circle cx="35" cy="-37" r="13" fill="#fdf3e1"/>
+    <path d="M 24 -42 Q 30 -50 36 -48 Q 32 -42 31 -38 Q 26 -38 24 -42 Z" fill="#f59e0b"/>
+    <circle cx="48" cy="-35" r="1.9" fill="#f472b6"/>
+    <g class="blink"><ellipse cx="40" cy="-41" rx="2.6" ry="3.4" fill="#38bdf8"/><ellipse cx="40.4" cy="-41" rx="1.1" ry="2.8" fill="#0c0a09"/></g>
+    <g stroke="#a8a29e" stroke-width="1.4" stroke-linecap="round"><path d="M 41 -32 L 26 -26"/><path d="M 41 -34 L 24 -33"/><path d="M 41 -36 L 26 -40"/></g>
+  </g></g></g>
+  <!-- ledge (drawn over the resting arm) -->
+  <rect x="1040" y="96" width="160" height="54" fill="#d97757"/>
+  <rect x="1040" y="96" width="160" height="6" fill="#ea9f7e"/>
+  <g class="spark"><path d="M 1062 60 l 2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" fill="#fbbf24"/></g>
+  <g class="heart"><path d="M 1050 66 C 1044 60 1044 54 1050 56 C 1056 54 1056 60 1050 66 Z" fill="#f472b6"/></g>
+</svg>

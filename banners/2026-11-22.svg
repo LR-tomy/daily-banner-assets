@@ -1,0 +1,101 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .c1{animation:cs 40s linear infinite} .c2{animation:cs 26s linear infinite}
+    @keyframes cs{from{transform:translateX(0)}to{transform:translateX(-600px)}}
+    .armP{transform-box:view-box;transform-origin:0px 0px;animation:aP 8s ease-in-out infinite}
+    @keyframes aP{0%,10%{transform:rotate(-300deg)}30%{transform:rotate(-140deg)}42%{transform:rotate(-265deg)}52%{transform:rotate(-268deg)}72%,100%{transform:rotate(-300deg)}}
+    .inhand{animation:ih 8s linear infinite}
+    @keyframes ih{0%,41%{opacity:1}42%,95%{opacity:0}100%{opacity:1}}
+    .armC{transform-box:view-box;transform-origin:0px 0px;animation:aC 8s ease-in-out infinite}
+    @keyframes aC{0%,10%{transform:rotate(60deg)}20%,56%{transform:rotate(90deg)}60%{transform:rotate(72deg)}66%,86%{transform:rotate(90deg)}96%,100%{transform:rotate(60deg)}}
+    .hdP{transform-box:fill-box;transform-origin:70% 100%;animation:hP 8s ease-in-out infinite}
+    @keyframes hP{0%,10%{transform:rotate(0)}30%{transform:rotate(6deg)}44%,60%{transform:rotate(-8deg)}76%,100%{transform:rotate(0)}}
+    .hdC{transform-box:fill-box;transform-origin:70% 100%;animation:hC 8s ease-in-out infinite}
+    @keyframes hC{0%,40%{transform:rotate(0)}62%,86%{transform:rotate(-6deg)}96%,100%{transform:rotate(0)}}
+    .tail{transform-box:fill-box;transform-origin:0% 100%;animation:tl 3.6s ease-in-out infinite}
+    @keyframes tl{0%,100%{transform:rotate(0)}40%{transform:rotate(7deg)}60%{transform:rotate(-3deg)}}
+    .ear{transform-box:fill-box;transform-origin:50% 100%;animation:er 7s ease-in-out infinite}
+    @keyframes er{0%,86%,100%{transform:rotate(0)}90%{transform:rotate(-12deg)}95%{transform:rotate(2deg)}}
+    .eye{transform-box:fill-box;transform-origin:50% 50%;animation:bl 5s infinite}
+    @keyframes bl{0%,90%,96%,100%{transform:scaleY(1)}93%{transform:scaleY(.1)}}
+    .ball{animation:bf 8s linear infinite;opacity:0}
+    @keyframes bf{
+      0%,41.9%{opacity:0;transform:translate(0,0)}
+      42%{opacity:1;transform:translate(0,0)}
+      46%{transform:translate(50px,-30px)}
+      50%{transform:translate(101px,-44px)}
+      54%{transform:translate(151px,-42px)}
+      58%{transform:translate(202px,-28px)}
+      60.5%{transform:translate(227px,-14px)}
+      62%{transform:translate(252px,4px)}
+      88%{opacity:1;transform:translate(252px,4px)}
+      94%,100%{opacity:0;transform:translate(252px,4px)}}
+    .spin{transform-box:fill-box;transform-origin:50% 50%;animation:sn .35s linear infinite}
+    @keyframes sn{to{transform:rotate(360deg)}}
+    .fast{animation:fa 8s ease-in-out infinite;opacity:0}
+    @keyframes fa{0%,12%{opacity:0}20%,34%{opacity:1}42%,100%{opacity:0}}
+    .trail{stroke-dasharray:1;animation:tr 8s ease-out infinite}
+    @keyframes tr{0%,42%{stroke-dashoffset:1}62%,84%{stroke-dashoffset:0;opacity:1}94%,100%{stroke-dashoffset:0;opacity:0}}
+    .pop{transform-box:fill-box;transform-origin:50% 50%;animation:pp 8s ease-out infinite;opacity:0}
+    @keyframes pp{0%,61%{transform:scale(0);opacity:0}65%{transform:scale(1.3);opacity:1}80%,100%{transform:scale(.6);opacity:0}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bae6fd"/><stop offset="1" stop-color="#e0f2fe"/></linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <g class="c1" opacity=".85"><g transform="translate(520,26) scale(1.1)" fill="#ffffff"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-6" rx="14" ry="9"/><ellipse cx="8" cy="-9" rx="16" ry="11"/></g><g transform="translate(880,16) scale(0.8)" fill="#ffffff"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-6" rx="14" ry="9"/><ellipse cx="8" cy="-9" rx="16" ry="11"/></g><g transform="translate(1180,34) scale(1.2)" fill="#ffffff"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-6" rx="14" ry="9"/><ellipse cx="8" cy="-9" rx="16" ry="11"/></g><g transform="translate(1500,20) scale(0.9)" fill="#ffffff"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-6" rx="14" ry="9"/><ellipse cx="8" cy="-9" rx="16" ry="11"/></g></g>
+  <g class="c2" opacity=".6"><g transform="translate(700,52) scale(0.6)" fill="#ffffff"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-6" rx="14" ry="9"/><ellipse cx="8" cy="-9" rx="16" ry="11"/></g><g transform="translate(1050,44) scale(0.7)" fill="#ffffff"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-6" rx="14" ry="9"/><ellipse cx="8" cy="-9" rx="16" ry="11"/></g><g transform="translate(1420,58) scale(0.6)" fill="#ffffff"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-6" rx="14" ry="9"/><ellipse cx="8" cy="-9" rx="16" ry="11"/></g></g>
+  <text x="340" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="56" letter-spacing="1" fill="#14532d">直球を投げない！</text>
+  <!-- field -->
+  <rect y="120" width="1200" height="30" fill="#86efac"/><rect y="120" width="1200" height="4" fill="#4ade80"/>
+  <rect y="146" width="1200" height="4" fill="#22c55e"/>
+  <ellipse cx="780" cy="134" rx="40" ry="8" fill="#d6a672"/>
+  <path d="M 1134 134 L 1166 134 L 1166 140 L 1150 147 L 1134 140 Z" fill="#ffffff"/>
+  <!-- fastball (crossed out) and curve trail -->
+  <g class="fast"><path d="M 838 104 L 1090 104" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+    <path d="M 956 94 L 974 114 M 974 94 L 956 114" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/></g>
+  <path class="trail" pathLength="1" d="M 838 104 C 880 54, 960 52, 1010 66 S 1076 96, 1090 108" fill="none" stroke="#f59e0b" stroke-width="2.4" stroke-dasharray="1" stroke-linecap="round" opacity=".8"/>
+  <g transform="translate(780,134) scale(-.85,.85)">
+    <g class="tail"><path d="M 24 -6 Q 52 -6 50 -32 Q 49 -46 41 -44" fill="none" stroke="#c2763a" stroke-width="8" stroke-linecap="round"/></g>
+    <ellipse cx="6" cy="-26" rx="21" ry="27" fill="#fdfaf5" transform="rotate(-8 6 -26)"/>
+    <ellipse cx="14" cy="-34" rx="9" ry="13" fill="#c2763a" transform="rotate(-8 14 -34)"/>
+    <ellipse cx="-3" cy="-22" rx="8" ry="14" fill="#fff7ed"/>
+    <g class="hdP">
+      <polygon points="-26,-70 -24,-88 -13,-74" fill="#c2763a"/>
+      <g class="ear"><polygon points="-9,-74 -2,-86 4,-68" fill="#c2763a"/></g>
+      <circle cx="-12" cy="-60" r="16" fill="#fdfaf5"/>
+      <ellipse cx="-9" cy="-69" rx="12" ry="7" fill="#c2763a"/>
+      <ellipse cx="-23" cy="-55" rx="7" ry="5.5" fill="#fff7ed"/>
+      <circle cx="-29" cy="-57" r="2" fill="#f472b6"/>
+      <g class="eye"><ellipse cx="-19" cy="-62" rx="2.5" ry="3.3" fill="#38bdf8"/><ellipse cx="-19.5" cy="-62" rx="1.1" ry="2.7" fill="#0c0a09"/></g>
+      
+      <g stroke="#6b7280" stroke-width="1.2" stroke-linecap="round"><path d="M -23 -55 L -6 -50"/><path d="M -23 -57 L -4 -57"/><path d="M -23 -59 L -6 -64"/></g>
+    </g>
+    <g transform="translate(-12,-30)"><g class="armP">
+      <rect x="-4.5" y="0" width="9" height="56" rx="4.5" fill="#fdfaf5"/>
+      <g class="inhand"><circle cx="0" cy="60" r="5" fill="#ffffff" stroke="#dc2626" stroke-width="1"/></g>
+      <ellipse cx="0" cy="56" rx="5.5" ry="4.5" fill="#fff7ed"/>
+    </g></g></g>
+  <g transform="translate(1150,134) scale(.85)">
+    <g class="tail"><path d="M 24 -6 Q 52 -6 50 -32 Q 49 -46 41 -44" fill="none" stroke="#7c4a2d" stroke-width="8" stroke-linecap="round"/></g>
+    <ellipse cx="6" cy="-26" rx="21" ry="27" fill="#7c4a2d" transform="rotate(-8 6 -26)"/>
+    <ellipse cx="12" cy="-34" rx="9" ry="12" fill="#6b3d24" transform="rotate(-8 12 -34)"/>
+    <ellipse cx="-3" cy="-22" rx="8" ry="14" fill="#fff7ed"/>
+    <g class="hdC">
+      <polygon points="-26,-70 -24,-88 -13,-74" fill="#7c4a2d"/>
+      <g class="ear"><polygon points="-9,-74 -2,-86 4,-68" fill="#7c4a2d"/></g>
+      <circle cx="-12" cy="-60" r="16" fill="#7c4a2d"/>
+      <ellipse cx="-17" cy="-61" rx="4" ry="10" fill="#fff7ed"/>
+      <ellipse cx="-23" cy="-55" rx="7" ry="5.5" fill="#fff7ed"/>
+      <circle cx="-29" cy="-57" r="2" fill="#f472b6"/>
+      <g class="eye"><ellipse cx="-19" cy="-62" rx="2.5" ry="3.3" fill="#84cc16"/><ellipse cx="-19.5" cy="-62" rx="1.1" ry="2.7" fill="#0c0a09"/></g>
+      
+      <g stroke="#6b7280" stroke-width="1.2" stroke-linecap="round"><path d="M -23 -55 L -6 -50"/><path d="M -23 -57 L -4 -57"/><path d="M -23 -59 L -6 -64"/></g>
+    </g>
+    <g transform="translate(-12,-30)"><g class="armC">
+      <rect x="-4.5" y="0" width="9" height="56" rx="4.5" fill="#7c4a2d"/>
+      <circle cx="0" cy="60" r="11" fill="#b45309"/><circle cx="0" cy="60" r="11" fill="none" stroke="#78350f" stroke-width="2"/><circle cx="0" cy="60" r="5" fill="#92400e"/>
+    </g></g></g>
+  <g transform="translate(838,104)"><g class="ball"><g class="spin"><circle r="5.5" fill="#ffffff" stroke="#9ca3af" stroke-width=".8"/><path d="M -3.5 -3 Q 0 0 -3.5 3 M 3.5 -3 Q 0 0 3.5 3" stroke="#dc2626" stroke-width="1" fill="none"/></g></g></g>
+  <g class="pop"><path d="M 1090 92 l 2.4 6 6 2.4 -6 2.4 -2.4 6 -2.4 -6 -6 -2.4 6 -2.4 z" fill="#fbbf24"/><path d="M 1104 96 l 1.5 3.5 3.5 1.5 -3.5 1.5 -1.5 3.5 -1.5 -3.5 -3.5 -1.5 3.5 -1.5 z" fill="#f59e0b"/></g>
+</svg>

@@ -1,0 +1,68 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .m1{animation:ms 30s linear infinite} .m2{animation:ms 18s linear infinite}
+    @keyframes ms{from{transform:translateX(0)}to{transform:translateX(-300px)}}
+    .w1{animation:ws 3s linear infinite} .w2{animation:ws 2s linear infinite reverse}
+    @keyframes ws{from{transform:translateX(0)}to{transform:translateX(-60px)}}
+    .cat{animation:ct 8s ease-in-out infinite}
+    @keyframes ct{
+      0%,12%{transform:translate(800px,127px);opacity:1}
+      22.5%{transform:translate(850px,106px)}
+      30%,44%{transform:translate(900px,127px)}
+      52.5%{transform:translate(950px,106px)}
+      60%,69%{transform:translate(1000px,127px)}
+      77.5%{transform:translate(1050px,106px)}
+      85%,90%{transform:translate(1100px,127px);opacity:1}
+      94%{transform:translate(1100px,127px);opacity:0}
+      94.1%{transform:translate(800px,127px);opacity:0}
+      99%,100%{transform:translate(800px,127px);opacity:1}}
+    .lgA{transform-box:fill-box;transform-origin:50% 0%;animation:la 8s linear infinite}
+    .lgB{transform-box:fill-box;transform-origin:50% 0%;animation:lb 8s linear infinite}
+    @keyframes la{0%{transform:rotate(0)}15.0%{transform:rotate(0deg)}18.8%{transform:rotate(28deg)}22.5%{transform:rotate(-28deg)}26.2%{transform:rotate(28deg)}30.0%{transform:rotate(0deg)}45.0%{transform:rotate(0deg)}48.8%{transform:rotate(28deg)}52.5%{transform:rotate(-28deg)}56.2%{transform:rotate(28deg)}60.0%{transform:rotate(0deg)}70.0%{transform:rotate(0deg)}73.8%{transform:rotate(28deg)}77.5%{transform:rotate(-28deg)}81.2%{transform:rotate(28deg)}85.0%{transform:rotate(0deg)}100%{transform:rotate(0)}}
+    @keyframes lb{0%{transform:rotate(0)}15.0%{transform:rotate(0deg)}18.8%{transform:rotate(-28deg)}22.5%{transform:rotate(28deg)}26.2%{transform:rotate(-28deg)}30.0%{transform:rotate(0deg)}45.0%{transform:rotate(0deg)}48.8%{transform:rotate(-28deg)}52.5%{transform:rotate(28deg)}56.2%{transform:rotate(-28deg)}60.0%{transform:rotate(0deg)}70.0%{transform:rotate(0deg)}73.8%{transform:rotate(-28deg)}77.5%{transform:rotate(28deg)}81.2%{transform:rotate(-28deg)}85.0%{transform:rotate(0deg)}100%{transform:rotate(0)}}
+    .tail{transform-box:fill-box;transform-origin:100% 100%;animation:tl 2.6s ease-in-out infinite}
+    @keyframes tl{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(8deg)}}
+    .scarf{transform-box:fill-box;transform-origin:100% 50%;animation:sc 1.2s ease-in-out infinite}
+    @keyframes sc{0%,100%{transform:rotate(-6deg) scaleX(1)}50%{transform:rotate(7deg) scaleX(.9)}}
+    .eye{transform-box:fill-box;transform-origin:50% 50%;animation:bl 5s infinite}
+    @keyframes bl{0%,90%,96%,100%{transform:scaleY(1)}93%{transform:scaleY(.1)}}
+    .rp{transform-box:fill-box;transform-origin:50% 50%;opacity:0}
+    .r0{animation:rp0 8s ease-out infinite} .r1{animation:rp1 8s ease-out infinite} .r2{animation:rp2 8s ease-out infinite} .r3{animation:rp3 8s ease-out infinite}
+    @keyframes rp0{0%,2%{transform:scale(.3);opacity:.9}14%,100%{transform:scale(1.2);opacity:0}}
+    @keyframes rp1{0%,29%{transform:scale(.3);opacity:0}30%{transform:scale(.3);opacity:.9}44%,100%{transform:scale(1.2);opacity:0}}
+    @keyframes rp2{0%,59%{transform:scale(.3);opacity:0}60%{transform:scale(.3);opacity:.9}74%,100%{transform:scale(1.2);opacity:0}}
+    @keyframes rp3{0%,84%{transform:scale(.3);opacity:0}85%{transform:scale(.3);opacity:.9}99%,100%{transform:scale(1.2);opacity:0}}
+    .s1{animation:g1 8s linear infinite} .s2{animation:g2 8s linear infinite} .s3{animation:g3 8s linear infinite}
+    @keyframes g1{0%,29%{fill:#9ca3af}31%,50%{fill:#fbbf24}70%,100%{fill:#9ca3af}}
+    @keyframes g2{0%,59%{fill:#9ca3af}61%,78%{fill:#fbbf24}95%,100%{fill:#9ca3af}}
+    @keyframes g3{0%,84%{fill:#9ca3af}86%,93%{fill:#fbbf24}99%,100%{fill:#9ca3af}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#e0f2fe"/></linearGradient>
+    <linearGradient id="wt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient>
+  </defs>
+  <rect width="1200" height="150" fill="url(#bg)"/>
+  <g class="m1" fill="#dbeafe" opacity=".9"><polygon points="-300,120 -240,70 -190,96 -150,80 -90,120" /><polygon points="0,120 60,70 110,96 150,80 210,120" /><polygon points="300,120 360,70 410,96 450,80 510,120" /><polygon points="600,120 660,70 710,96 750,80 810,120" /><polygon points="900,120 960,70 1010,96 1050,80 1110,120" /><polygon points="1200,120 1260,70 1310,96 1350,80 1410,120" /></g>
+  <g class="m2" fill="#bfdbfe" opacity=".8"><polygon points="-260,120 -190,88 -130,120" /><polygon points="40,120 110,88 170,120" /><polygon points="340,120 410,88 470,120" /><polygon points="640,120 710,88 770,120" /><polygon points="940,120 1010,88 1070,120" /><polygon points="1240,120 1310,88 1370,120" /></g>
+  <text x="340" y="75" dominant-baseline="central" text-anchor="middle" font-family="'Hiragino Sans','Yu Gothic','Noto Sans JP','Meiryo',sans-serif" font-weight="900" font-size="56" letter-spacing="1" fill="#0c4a6e">一歩を踏み出す</text>
+  <rect y="136" width="1200" height="14" fill="url(#wt)"/>
+  <g class="w1" fill="none" stroke="#e0f2fe" stroke-width="1.6" opacity=".8"><path d="M -60 138 q 15 -5 30 0 t 30 0" /><path d="M 0 138 q 15 -5 30 0 t 30 0" /><path d="M 60 138 q 15 -5 30 0 t 30 0" /><path d="M 120 138 q 15 -5 30 0 t 30 0" /><path d="M 180 138 q 15 -5 30 0 t 30 0" /><path d="M 240 138 q 15 -5 30 0 t 30 0" /><path d="M 300 138 q 15 -5 30 0 t 30 0" /><path d="M 360 138 q 15 -5 30 0 t 30 0" /><path d="M 420 138 q 15 -5 30 0 t 30 0" /><path d="M 480 138 q 15 -5 30 0 t 30 0" /><path d="M 540 138 q 15 -5 30 0 t 30 0" /><path d="M 600 138 q 15 -5 30 0 t 30 0" /><path d="M 660 138 q 15 -5 30 0 t 30 0" /><path d="M 720 138 q 15 -5 30 0 t 30 0" /><path d="M 780 138 q 15 -5 30 0 t 30 0" /><path d="M 840 138 q 15 -5 30 0 t 30 0" /><path d="M 900 138 q 15 -5 30 0 t 30 0" /><path d="M 960 138 q 15 -5 30 0 t 30 0" /><path d="M 1020 138 q 15 -5 30 0 t 30 0" /><path d="M 1080 138 q 15 -5 30 0 t 30 0" /><path d="M 1140 138 q 15 -5 30 0 t 30 0" /><path d="M 1200 138 q 15 -5 30 0 t 30 0" /><path d="M 1260 138 q 15 -5 30 0 t 30 0" /></g>
+  <g class="w2" fill="none" stroke="#7dd3fc" stroke-width="1.6" opacity=".8" transform="translate(0,6)"><path d="M -60 138 q 15 -5 30 0 t 30 0" /><path d="M 0 138 q 15 -5 30 0 t 30 0" /><path d="M 60 138 q 15 -5 30 0 t 30 0" /><path d="M 120 138 q 15 -5 30 0 t 30 0" /><path d="M 180 138 q 15 -5 30 0 t 30 0" /><path d="M 240 138 q 15 -5 30 0 t 30 0" /><path d="M 300 138 q 15 -5 30 0 t 30 0" /><path d="M 360 138 q 15 -5 30 0 t 30 0" /><path d="M 420 138 q 15 -5 30 0 t 30 0" /><path d="M 480 138 q 15 -5 30 0 t 30 0" /><path d="M 540 138 q 15 -5 30 0 t 30 0" /><path d="M 600 138 q 15 -5 30 0 t 30 0" /><path d="M 660 138 q 15 -5 30 0 t 30 0" /><path d="M 720 138 q 15 -5 30 0 t 30 0" /><path d="M 780 138 q 15 -5 30 0 t 30 0" /><path d="M 840 138 q 15 -5 30 0 t 30 0" /><path d="M 900 138 q 15 -5 30 0 t 30 0" /><path d="M 960 138 q 15 -5 30 0 t 30 0" /><path d="M 1020 138 q 15 -5 30 0 t 30 0" /><path d="M 1080 138 q 15 -5 30 0 t 30 0" /><path d="M 1140 138 q 15 -5 30 0 t 30 0" /><path d="M 1200 138 q 15 -5 30 0 t 30 0" /><path d="M 1260 138 q 15 -5 30 0 t 30 0" /></g>
+  <ellipse class="rp r0" cx="800" cy="141" rx="34" ry="5" fill="none" stroke="#e0f2fe" stroke-width="2"/><ellipse class="rp r1" cx="900" cy="141" rx="34" ry="5" fill="none" stroke="#e0f2fe" stroke-width="2"/><ellipse class="rp r2" cx="1000" cy="141" rx="34" ry="5" fill="none" stroke="#e0f2fe" stroke-width="2"/><ellipse class="rp r3" cx="1100" cy="141" rx="34" ry="5" fill="none" stroke="#e0f2fe" stroke-width="2"/>
+  <ellipse class="stone s0" cx="800" cy="132" rx="28" ry="7" fill="#9ca3af"/><ellipse cx="800" cy="128.5" rx="26" ry="4.5" fill="#cbd5e1"/><ellipse class="stone s1" cx="900" cy="132" rx="28" ry="7" fill="#9ca3af"/><ellipse cx="900" cy="128.5" rx="26" ry="4.5" fill="#cbd5e1"/><ellipse class="stone s2" cx="1000" cy="132" rx="28" ry="7" fill="#9ca3af"/><ellipse cx="1000" cy="128.5" rx="26" ry="4.5" fill="#cbd5e1"/><ellipse class="stone s3" cx="1100" cy="132" rx="28" ry="7" fill="#9ca3af"/><ellipse cx="1100" cy="128.5" rx="26" ry="4.5" fill="#cbd5e1"/>
+  <g class="cat"><g transform="scale(1.25)">
+    <g class="tail"><path d="M -18 -19 Q -34 -20 -32 -36 Q -31 -44 -25 -43" fill="none" stroke="#1f2937" stroke-width="5" stroke-linecap="round"/></g>
+    <rect class="lgB" x="-15" y="-12" width="4.5" height="12" rx="2.2" fill="#111827"/>
+    <rect class="lgA" x="-8" y="-12" width="4.5" height="12" rx="2.2" fill="#1f2937"/>
+    <rect class="lgA" x="9" y="-12" width="4.5" height="12" rx="2.2" fill="#111827"/>
+    <rect class="lgB" x="16" y="-12" width="4.5" height="12" rx="2.2" fill="#1f2937"/>
+    <ellipse cx="0" cy="-18" rx="21" ry="10" fill="#1f2937"/>
+    <polygon points="17,-33 19,-44 25,-36" fill="#1f2937"/><polygon points="26,-35 33,-43 33,-31" fill="#1f2937"/>
+    <circle cx="26" cy="-27" r="10" fill="#1f2937"/>
+    <ellipse cx="34" cy="-24" rx="4" ry="3" fill="#374151"/>
+    <circle cx="37.5" cy="-25" r="1.3" fill="#f472b6"/>
+    <g class="eye"><ellipse cx="30.5" cy="-29" rx="2.4" ry="3" fill="#fbbf24"/><ellipse cx="31" cy="-29" rx="1" ry="2.5" fill="#000"/></g>
+    <g stroke="#e5e7eb" stroke-width="1" stroke-linecap="round"><path d="M 34 -23 L 44 -20"/><path d="M 34 -24.5 L 45 -25"/><path d="M 34 -26 L 44 -30"/></g>
+    <g class="scarf"><path d="M 14 -25 Q 4 -20 -4 -26 L -6 -22 Q 4 -14 15 -20 Z" fill="#fb923c"/><path d="M 14 -25 L 19 -22 L 16 -17 L 12 -20 Z" fill="#f97316"/></g>
+  </g></g>
+</svg>

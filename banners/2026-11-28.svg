@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150">
+<style>
+@keyframes arm{0%{transform:rotate(8.58deg) scale(1.17,1)}8.33%{transform:rotate(12.46deg) scale(1.16,1)}16.67%{transform:rotate(15.86deg) scale(1.12,1)}25%{transform:rotate(18.06deg) scale(1.05,1)}33.33%{transform:rotate(18.31deg) scale(0.97,1)}41.67%{transform:rotate(16.06deg) scale(0.9,1)}50%{transform:rotate(11.59deg) scale(0.87,1)}58.33%{transform:rotate(6.43deg) scale(0.87,1)}66.67%{transform:rotate(2.61deg) scale(0.92,1)}75%{transform:rotate(1.25deg) scale(1,1)}83.33%{transform:rotate(2.24deg) scale(1.08,1)}91.67%{transform:rotate(4.94deg) scale(1.14,1)}100%{transform:rotate(8.58deg) scale(1.17,1)}}
+.arm{animation:arm 1.2s linear infinite;transform-box:view-box;transform-origin:24px -34px}
+@keyframes crank{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.crank{animation:crank 1.2s linear infinite;transform-box:view-box;transform-origin:70px -26px}
+@keyframes hop{0%{transform:translate(0px,0px)}80%{transform:translate(0px,0px)}83%{transform:translate(0px,-12px)}86%{transform:translate(0px,0px)}89%{transform:translate(0px,-12px)}92%{transform:translate(0px,0px)}100%{transform:translate(0px,0px)}}
+.hop{animation:hop 9s ease-in-out infinite}
+@keyframes eo{0%{opacity:1}71.9%{opacity:1}72%{opacity:0}93.9%{opacity:0}94%{opacity:1}100%{opacity:1}}
+@keyframes eh{0%{opacity:0}71.9%{opacity:0}72%{opacity:1}93.9%{opacity:1}94%{opacity:0}100%{opacity:0}}
+.eo{animation:eo 9s linear infinite}.eh{animation:eh 9s linear infinite;opacity:0}
+@keyframes tail{0%{transform:rotate(-5deg)}100%{transform:rotate(7deg)}}
+.tail{animation:tail 1.4s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:100% 100%}
+@keyframes nod{0%{transform:rotate(0deg)}50%{transform:rotate(-3deg)}100%{transform:rotate(0deg)}}
+.head{animation:nod 1.2s ease-in-out infinite;transform-box:view-box;transform-origin:34px -40px}
+@keyframes b1{0%{transform:scaleY(0)}5%{transform:scaleY(0)}30%{transform:scaleY(1)}95%{transform:scaleY(1)}98%{transform:scaleY(0)}100%{transform:scaleY(0)}}
+.b1{animation:b1 9s ease-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes b2{0%{transform:scaleY(0)}15%{transform:scaleY(0)}50%{transform:scaleY(1)}95%{transform:scaleY(1)}98%{transform:scaleY(0)}100%{transform:scaleY(0)}}
+.b2{animation:b2 9s ease-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes b3{0%{transform:scaleY(0)}25%{transform:scaleY(0)}70%{transform:scaleY(1)}95%{transform:scaleY(1)}98%{transform:scaleY(0)}100%{transform:scaleY(0)}}
+.b3{animation:b3 9s ease-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes wl{0%{transform:scaleY(0)}25%{transform:scaleY(0)}70%{transform:scaleY(1)}95%{transform:scaleY(1)}98%{transform:scaleY(0)}100%{transform:scaleY(0)}}
+.wl{animation:wl 9s ease-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bulb{0%{opacity:0}69%{opacity:0}72%{opacity:1}95%{opacity:1}98%{opacity:0}100%{opacity:0}}
+.bulb{animation:bulb 9s linear infinite;opacity:0}
+@keyframes pulse{0%{transform:scale(.85)}50%{transform:scale(1.15)}100%{transform:scale(.85)}}
+.pulse{animation:pulse 1s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes tw{0%{transform:scale(.3);opacity:.3}50%{transform:scale(1.2);opacity:1}100%{transform:scale(.3);opacity:.3}}
+.tw{animation:tw 1.1s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.tw2{animation-delay:-.4s}.tw3{animation-delay:-.8s}
+@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.blades{animation:spin 2.4s linear infinite;transform-box:view-box;transform-origin:715px 72px}
+.rays{animation:spin 12s linear infinite;transform-box:view-box;transform-origin:1050px 30px}
+@keyframes sunp{0%{transform:scale(.94)}50%{transform:scale(1.06)}100%{transform:scale(.94)}}
+.sun{animation:sunp 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes drop{0%{transform:translateY(0px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateY(44px);opacity:0}}
+.drop{animation:drop .8s linear infinite}.dr2{animation-delay:-.2s}.dr3{animation-delay:-.4s}.dr4{animation-delay:-.6s}
+@keyframes flow{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-14}}
+.flow{animation:flow .5s linear infinite}
+@keyframes glint{0%{transform:translateX(-30px);opacity:0}20%{opacity:.8}60%{opacity:.8}100%{transform:translateX(34px);opacity:0}}
+.glint{animation:glint 2.2s ease-in-out infinite}
+@keyframes leaf{0%{transform:translate(0px,0px) rotate(0deg);opacity:0}10%{opacity:1}50%{transform:translate(250px,10px) rotate(200deg)}90%{opacity:1}100%{transform:translate(520px,-6px) rotate(420deg);opacity:0}}
+.leaf{animation:leaf 5s linear infinite}
+@keyframes drift{0%{transform:translate(0px,0px);opacity:0}20%{opacity:.85}80%{opacity:.5}100%{transform:translate(14px,-40px);opacity:0}}
+.d{animation:drift 10s ease-in-out infinite}
+</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c3a27"/><stop offset="1" stop-color="#1e6d47"/></linearGradient>
+<radialGradient id="bg2"><stop offset="0" stop-color="#ffe27a" stop-opacity=".85"/><stop offset="1" stop-color="#ffe27a" stop-opacity="0"/></radialGradient>
+<clipPath id="barrel"><rect x="1118" y="98" width="34" height="34" rx="3"/></clipPath>
+</defs>
+<rect width="1200" height="150" fill="url(#bg)"/>
+<polygon points="-20,132 0,85 20,132" fill="#0d3b27" opacity="0.7"/><polygon points="26,132 46,84 66,132" fill="#0d3b27" opacity="0.7"/><polygon points="72,132 92,58 112,132" fill="#0d3b27" opacity="0.7"/><polygon points="118,132 138,54 158,132" fill="#0d3b27" opacity="0.7"/><polygon points="164,132 184,81 204,132" fill="#0d3b27" opacity="0.7"/><polygon points="210,132 230,78 250,132" fill="#0d3b27" opacity="0.7"/><polygon points="256,132 276,84 296,132" fill="#0d3b27" opacity="0.7"/><polygon points="302,132 322,52 342,132" fill="#0d3b27" opacity="0.7"/><polygon points="348,132 368,63 388,132" fill="#0d3b27" opacity="0.7"/><polygon points="394,132 414,66 434,132" fill="#0d3b27" opacity="0.7"/><polygon points="440,132 460,79 480,132" fill="#0d3b27" opacity="0.7"/><polygon points="486,132 506,79 526,132" fill="#0d3b27" opacity="0.7"/><polygon points="532,132 552,83 572,132" fill="#0d3b27" opacity="0.7"/><polygon points="578,132 598,67 618,132" fill="#0d3b27" opacity="0.7"/><polygon points="624,132 644,82 664,132" fill="#0d3b27" opacity="0.7"/><polygon points="670,132 690,84 710,132" fill="#0d3b27" opacity="0.7"/><polygon points="716,132 736,54 756,132" fill="#0d3b27" opacity="0.7"/><polygon points="762,132 782,80 802,132" fill="#0d3b27" opacity="0.7"/><polygon points="808,132 828,80 848,132" fill="#0d3b27" opacity="0.7"/><polygon points="854,132 874,91 894,132" fill="#0d3b27" opacity="0.7"/><polygon points="900,132 920,66 940,132" fill="#0d3b27" opacity="0.7"/><polygon points="946,132 966,77 986,132" fill="#0d3b27" opacity="0.7"/><polygon points="992,132 1012,88 1032,132" fill="#0d3b27" opacity="0.7"/><polygon points="1038,132 1058,86 1078,132" fill="#0d3b27" opacity="0.7"/><polygon points="1084,132 1104,66 1124,132" fill="#0d3b27" opacity="0.7"/><polygon points="1130,132 1150,72 1170,132" fill="#0d3b27" opacity="0.7"/><polygon points="1176,132 1196,48 1216,132" fill="#0d3b27" opacity="0.7"/><polygon points="3,132 23,88 43,132" fill="#134f34" opacity="0.55"/><polygon points="49,132 69,87 89,132" fill="#134f34" opacity="0.55"/><polygon points="95,132 115,76 135,132" fill="#134f34" opacity="0.55"/><polygon points="141,132 161,76 181,132" fill="#134f34" opacity="0.55"/><polygon points="187,132 207,70 227,132" fill="#134f34" opacity="0.55"/><polygon points="233,132 253,71 273,132" fill="#134f34" opacity="0.55"/><polygon points="279,132 299,84 319,132" fill="#134f34" opacity="0.55"/><polygon points="325,132 345,73 365,132" fill="#134f34" opacity="0.55"/><polygon points="371,132 391,85 411,132" fill="#134f34" opacity="0.55"/><polygon points="417,132 437,71 457,132" fill="#134f34" opacity="0.55"/><polygon points="463,132 483,78 503,132" fill="#134f34" opacity="0.55"/><polygon points="509,132 529,88 549,132" fill="#134f34" opacity="0.55"/><polygon points="555,132 575,86 595,132" fill="#134f34" opacity="0.55"/><polygon points="601,132 621,92 641,132" fill="#134f34" opacity="0.55"/><polygon points="647,132 667,83 687,132" fill="#134f34" opacity="0.55"/><polygon points="693,132 713,72 733,132" fill="#134f34" opacity="0.55"/><polygon points="739,132 759,71 779,132" fill="#134f34" opacity="0.55"/><polygon points="785,132 805,84 825,132" fill="#134f34" opacity="0.55"/><polygon points="831,132 851,90 871,132" fill="#134f34" opacity="0.55"/><polygon points="877,132 897,76 917,132" fill="#134f34" opacity="0.55"/><polygon points="923,132 943,75 963,132" fill="#134f34" opacity="0.55"/><polygon points="969,132 989,84 1009,132" fill="#134f34" opacity="0.55"/><polygon points="1015,132 1035,89 1055,132" fill="#134f34" opacity="0.55"/><polygon points="1061,132 1081,74 1101,132" fill="#134f34" opacity="0.55"/><polygon points="1107,132 1127,79 1147,132" fill="#134f34" opacity="0.55"/><polygon points="1153,132 1173,87 1193,132" fill="#134f34" opacity="0.55"/><polygon points="1199,132 1219,86 1239,132" fill="#134f34" opacity="0.55"/>
+<circle class="d" cx="763" cy="38" r="1.2" fill="#fff3a0" style="animation-duration:11.0s;animation-delay:-10.0s"/><circle class="d" cx="1009" cy="77" r="1.2" fill="#fff3a0" style="animation-duration:10.6s;animation-delay:-3.1s"/><circle class="d" cx="800" cy="94" r="2.0" fill="#fff3a0" style="animation-duration:12.7s;animation-delay:-2.8s"/><circle class="d" cx="642" cy="128" r="2.0" fill="#fff3a0" style="animation-duration:9.3s;animation-delay:-8.3s"/><circle class="d" cx="872" cy="33" r="1.2" fill="#fff3a0" style="animation-duration:9.4s;animation-delay:-11.0s"/><circle class="d" cx="670" cy="75" r="2.0" fill="#fff3a0" style="animation-duration:12.8s;animation-delay:-10.8s"/><circle class="d" cx="227" cy="93" r="1.2" fill="#fff3a0" style="animation-duration:13.1s;animation-delay:-6.3s"/><circle class="d" cx="1125" cy="87" r="2.0" fill="#fff3a0" style="animation-duration:11.0s;animation-delay:-8.1s"/><circle class="d" cx="508" cy="89" r="1.6" fill="#fff3a0" style="animation-duration:11.3s;animation-delay:-2.8s"/><circle class="d" cx="78" cy="31" r="1.6" fill="#fff3a0" style="animation-duration:10.8s;animation-delay:-6.6s"/><circle class="d" cx="910" cy="47" r="2.0" fill="#fff3a0" style="animation-duration:11.7s;animation-delay:-11.1s"/><circle class="d" cx="942" cy="76" r="2.0" fill="#fff3a0" style="animation-duration:10.5s;animation-delay:-2.6s"/><circle class="d" cx="412" cy="101" r="1.2" fill="#fff3a0" style="animation-duration:12.3s;animation-delay:-1.4s"/><circle class="d" cx="616" cy="95" r="2.0" fill="#fff3a0" style="animation-duration:12.6s;animation-delay:-0.9s"/><circle class="d" cx="407" cy="51" r="2.0" fill="#fff3a0" style="animation-duration:14.2s;animation-delay:-5.4s"/><circle class="d" cx="664" cy="94" r="1.6" fill="#fff3a0" style="animation-duration:14.3s;animation-delay:-11.7s"/>
+<rect y="132" width="1200" height="18" fill="#082317"/>
+<rect y="131" width="1200" height="1.5" fill="#6fcf97" opacity=".55"/>
+<!-- wires -->
+<g fill="none" stroke-width="2.4" stroke-linecap="butt" stroke-dasharray="7 7">
+  <path class="flow" d="M715,137 H905" stroke="#38d5e8"/>
+  <path class="flow" d="M992,141 H917" stroke="#ffd23f"/>
+  <path class="flow" d="M1135,145 H923" stroke="#6fa4ff"/>
+</g>
+<g stroke-width="1.6" stroke-linecap="round"><line x1="905" y1="132" x2="905" y2="137" stroke="#38d5e8"/><line x1="917" y1="132" x2="917" y2="141" stroke="#ffd23f"/><line x1="923" y1="132" x2="923" y2="145" stroke="#6fa4ff"/>
+<line x1="715" y1="132" x2="715" y2="137" stroke="#38d5e8"/><line x1="992" y1="132" x2="992" y2="141" stroke="#ffd23f"/><line x1="1135" y1="132" x2="1135" y2="145" stroke="#6fa4ff"/></g>
+<text x="40" y="88" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif" font-size="50" font-weight="800" fill="#fffbe8" stroke="#0b2a1a" stroke-width="8" stroke-linejoin="round" paint-order="stroke">環境を積極的に活用すべし</text>
+<g transform="translate(690,44)"><ellipse class="leaf" rx="5.5" ry="2.6" fill="#9bd85a" style="animation-delay:0s"/></g><g transform="translate(690,74)"><ellipse class="leaf" rx="5.5" ry="2.6" fill="#e6c14a" style="animation-delay:-1.7s"/></g><g transform="translate(690,104)"><ellipse class="leaf" rx="5.5" ry="2.6" fill="#7fcf6a" style="animation-delay:-3.3s"/></g>
+<!-- windmill -->
+<polygon points="708,132 722,132 718.5,76 711.5,76" fill="#e3dcc9" stroke="#1f4d34" stroke-width="1"/>
+<g class="blades"><path transform="rotate(0 715 72)" d="M715,72 L710.5,40 L719.5,40Z" fill="#fdfbf3" stroke="#1f4d34" stroke-width="1"/><path transform="rotate(90 715 72)" d="M715,72 L710.5,40 L719.5,40Z" fill="#fdfbf3" stroke="#1f4d34" stroke-width="1"/><path transform="rotate(180 715 72)" d="M715,72 L710.5,40 L719.5,40Z" fill="#fdfbf3" stroke="#1f4d34" stroke-width="1"/><path transform="rotate(270 715 72)" d="M715,72 L710.5,40 L719.5,40Z" fill="#fdfbf3" stroke="#1f4d34" stroke-width="1"/></g>
+<circle cx="715" cy="72" r="4.5" fill="#c9bfa5" stroke="#1f4d34" stroke-width="1"/>
+<!-- sun & solar panel -->
+<g class="rays"><line x1="1050" y1="30" x2="1074" y2="30" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1070.78" y2="42" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1062" y2="50.78" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1050" y2="54" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1038" y2="50.78" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1029.22" y2="42" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1026" y2="30" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1029.22" y2="18" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1038" y2="9.22" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1050" y2="6" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1062" y2="9.22" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/><line x1="1050" y1="30" x2="1070.78" y2="18" stroke="#ffd23f" stroke-width="2.4" stroke-linecap="round"/></g>
+<circle class="sun" cx="1050" cy="30" r="13" fill="#ffd23f" stroke="#fff3b0" stroke-width="2"/>
+<line x1="992" y1="132" x2="992" y2="112" stroke="#c9bfa5" stroke-width="4" stroke-linecap="round"/>
+<g><polygon points="964,108 1016,94 1022,108 970,122" fill="#2a5db0" stroke="#cfe0ff" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M977,104.5 L983,118.5 M990,101 L996,115 M1003,97.5 L1009,111.5 M967,115 L1019,101" stroke="#7fa8f0" stroke-width="1" opacity=".8"/>
+<clipPath id="pc"><polygon points="964,108 1016,94 1022,108 970,122"/></clipPath>
+<g clip-path="url(#pc)"><polygon class="glint" points="978,94 986,94 976,122 968,122" fill="#fff" opacity="0"/></g></g>
+<!-- rain barrel -->
+<rect x="1118" y="98" width="34" height="34" rx="3" fill="#8a5a2b" stroke="#4b2f14" stroke-width="1.2"/>
+<g clip-path="url(#barrel)"><rect class="wl" x="1118" y="100" width="34" height="32" fill="#58b8ff" opacity=".9"/></g>
+<rect x="1118" y="106" width="34" height="3" fill="#4b2f14" opacity=".7"/><rect x="1118" y="122" width="34" height="3" fill="#4b2f14" opacity=".7"/>
+<rect x="1115" y="96" width="40" height="4" rx="2" fill="#a56e36" stroke="#4b2f14" stroke-width="1"/>
+<g fill="#bfe6ff"><rect class="drop" x="1125" y="54" width="2" height="7" rx="1"/><rect class="drop dr2" x="1133" y="54" width="2" height="7" rx="1"/><rect class="drop dr3" x="1141" y="54" width="2" height="7" rx="1"/><rect class="drop dr4" x="1148" y="54" width="2" height="7" rx="1"/></g>
+<g fill="#c3cfdc" stroke="#7b8a9a" stroke-width="1"><circle cx="1124" cy="40" r="10"/><circle cx="1138" cy="34" r="13"/><circle cx="1152" cy="41" r="9"/><rect x="1124" y="40" width="28" height="10" rx="4" stroke="none"/></g>
+<g fill="#c3cfdc"><circle cx="1124" cy="40" r="9"/><circle cx="1138" cy="34" r="12"/><circle cx="1152" cy="41" r="8"/><rect x="1124" y="41" width="28" height="9" rx="4"/></g>
+<g transform="translate(820,132)">
+  <!-- battery box -->
+  <rect x="70" y="-46" width="42" height="46" rx="5" fill="#e8f1e2" stroke="#0b2a1a" stroke-width="1.6"/>
+  <rect x="86" y="-50" width="10" height="4" rx="1" fill="#0b2a1a"/>
+  <rect class="b1" x="76" y="-40" width="8" height="34" rx="1.5" fill="#38d5e8"/>
+  <rect class="b2" x="88" y="-40" width="8" height="34" rx="1.5" fill="#ffd23f"/>
+  <rect class="b3" x="100" y="-40" width="8" height="34" rx="1.5" fill="#6fa4ff"/>
+  <!-- bulb -->
+  <g transform="translate(91,-66)">
+    <circle r="9" fill="#cfd8cf" opacity=".45" stroke="#e8f1e2" stroke-width="1"/>
+    <g class="bulb"><g class="pulse"><circle r="26" fill="url(#bg2)"/></g><circle r="8.5" fill="#ffe27a" stroke="#fff6c2" stroke-width="1.2"/>
+      <path d="M-3,2 L-1.5,-3 L0,2 L1.5,-3 L3,2" stroke="#e08a1e" stroke-width="1" fill="none"/>
+      <g class="tw "><path d="M-20,-19 l0,10 M-25,-14 l10,0" stroke="#fff6c2" stroke-width="2" stroke-linecap="round"/></g><g class="tw tw2"><path d="M18,-16 l0,8 M14,-12 l8,0" stroke="#fff6c2" stroke-width="2" stroke-linecap="round"/></g><g class="tw tw3"><path d="M0,-30 l0,8 M-4,-26 l8,0" stroke="#fff6c2" stroke-width="2" stroke-linecap="round"/></g></g>
+  </g>
+  <!-- crank -->
+  <circle cx="70" cy="-26" r="4.5" fill="#9aa7a0" stroke="#0b2a1a" stroke-width="1"/>
+  <g class="crank"><line x1="70" y1="-26" x2="77" y2="-26" stroke="#0b2a1a" stroke-width="3" stroke-linecap="round"/><circle cx="77" cy="-26" r="3" fill="#e0a43a" stroke="#0b2a1a" stroke-width="1"/></g>
+  <!-- cat -->
+  <g class="hop">
+    <g class="tail"><path d="M-22,-26 C-50,-24 -56,-58 -42,-74 C-37,-80 -29,-76 -32,-70" fill="none" stroke="#b8602e" stroke-width="8" stroke-linecap="round"/></g>
+    <ellipse cx="-8" cy="-16" rx="18" ry="15" fill="#f3eee4"/>
+    <ellipse cx="2" cy="-28" rx="28" ry="18" fill="#fbf7f0"/>
+    <ellipse cx="-8" cy="-3" rx="11" ry="4.5" fill="#fffdf8"/>
+    <rect x="18" y="-22" width="8" height="19" rx="4" fill="#fbf7f0"/>
+    <ellipse cx="22" cy="-3" rx="7" ry="4.5" fill="#fffdf8"/>
+    <g class="arm">
+      <line x1="24" y1="-34" x2="46" y2="-34" stroke="#d9d0bf" stroke-width="10" stroke-linecap="round"/>
+      <line x1="24" y1="-34" x2="46" y2="-34" stroke="#fbf7f0" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="46" cy="-34" r="5.5" fill="#fffdf8" stroke="#d9d0bf" stroke-width="1"/>
+    </g>
+    <g class="head"><g transform="translate(34,-52)">
+      <polygon points="-12,-8 -10,-25 2,-13" fill="#b8602e"/><polygon points="3,-13 12,-24 15,-9" fill="#b8602e"/>
+      <circle r="16" fill="#fffdf8" stroke="#e3dccd" stroke-width="1"/>
+      <path d="M-15,-6 Q-10,-17 4,-16 Q14,-14 15.5,-5 Q5,-11 -15,-6Z" fill="#b8602e"/>
+      <ellipse cx="12" cy="7" rx="6" ry="4.5" fill="#fff"/>
+      <circle cx="16.5" cy="4.5" r="2" fill="#e58a8a"/>
+      <path d="M13,8.5 Q15,11 18,9" stroke="#8a5a3c" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <g class="eo"><ellipse cx="6" cy="-2" rx="3.4" ry="3.7" fill="#e3a52a"/><circle cx="7.4" cy="-3.2" r="1.7" fill="#1b2433"/><circle cx="8.2" cy="-4.4" r=".8" fill="#fff"/></g>
+      <path class="eh" d="M2,-1 Q6.5,-8 11,-1" stroke="#2c1a10" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M11,7 L-22,1 M11,9 L-22,12" stroke="#e8f5e8" stroke-width="1.2" opacity=".95" stroke-linecap="round"/>
+    </g></g>
+  </g>
+</g>
+</svg>
